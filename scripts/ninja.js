@@ -126,7 +126,7 @@ ${promoteTarget ? `
     (only ${promoteTarget.join(' ')})))
 ` : ""}
     (action
-     (run %{workspace_root}/jscomp/main/bsc.exe -bs-cmi -bs-cmj ${flags} -I . %{inputs})))
+     (run %{workspace_root}/jscomp/main/js_main.exe -bs-cmi -bs-cmj ${flags} -I . %{inputs})))
 `;
 }
 
@@ -481,7 +481,7 @@ function ninjaQuickBuidList(xs) {
 
 function ccRuleList(xs) {
   return xs
-    .map(([rule, flags, src, target, externalDeps]) => rule(flags,src,target, externalDeps))
+    .map(([rule, flags, src, target, externalDeps]) => rule(flags, src, target, externalDeps))
     .join("\n");
 }
 
@@ -581,7 +581,7 @@ function duneBuildStmt(outputs, inputs, rule, depsMap, flags, externalDeps = [],
     var curDeps = depsMap.get(outputs[i]);
     if (curDeps !== undefined) {
       curDeps.forEach((x) => {
-        if (!outputs.includes (x.name)) {
+        if (!outputs.includes(x.name)) {
           deps.add(x)
         }
       });
@@ -924,24 +924,24 @@ var compilerTarget = pseudoTarget(COMPILER);
 async function runtimeNinja() {
   var ninjaCwd = "runtime";
   var ninjaOutput = "dune.gen";
-  var bsc_no_open_flags =  `${commonBsFlags} -bs-cross-module-opt -make-runtime -nopervasives -unsafe -w +50 -warn-error A`;
+  var bsc_no_open_flags = `${commonBsFlags} -bs-cross-module-opt -make-runtime -nopervasives -unsafe -w +50 -warn-error A`;
   var bsc_flags = `${bsc_no_open_flags} -open Bs_stdlib_mini`;
   var templateRuntimeRules = `
 
 ${ccRuleList([
-  [
-    ruleCC,
-    "-nostdlib -nopervasives",
-    "bs_stdlib_mini.mli",
-    "bs_stdlib_mini.cmi",
-  ],
-  [
-    ruleCC,
-    bsc_no_open_flags,
-    "js.ml",
-    ["js.cmj", "js.cmi"],
-  ],
-])}
+    [
+      ruleCC,
+      "-nostdlib -nopervasives",
+      "bs_stdlib_mini.mli",
+      "bs_stdlib_mini.cmi",
+    ],
+    [
+      ruleCC,
+      bsc_no_open_flags,
+      "js.ml",
+      ["js.cmj", "js.cmi"],
+    ],
+  ])}
 `;
   /**
    * @type {DepsMap}
@@ -1013,28 +1013,28 @@ async function othersNinja() {
 
   var belt_extraDeps = {
     belt_HashSet: ['belt_HashSetString', 'belt_HashSetInt'],
-    belt_HashSetString: [ 'belt_internalSetBuckets', 'belt_internalBucketsType', 'belt_Array'],
-    belt_HashSetInt: [ 'belt_internalSetBuckets', 'belt_internalBucketsType', 'belt_Array'],
+    belt_HashSetString: ['belt_internalSetBuckets', 'belt_internalBucketsType', 'belt_Array'],
+    belt_HashSetInt: ['belt_internalSetBuckets', 'belt_internalBucketsType', 'belt_Array'],
     belt_HashMap: ['belt_HashMapString', 'belt_HashMapInt'],
-    belt_HashMapString: [ 'belt_internalBuckets', 'belt_internalBucketsType', 'belt_Array'],
-    belt_HashMapInt: [ 'belt_internalBuckets', 'belt_internalBucketsType', 'belt_Array'],
+    belt_HashMapString: ['belt_internalBuckets', 'belt_internalBucketsType', 'belt_Array'],
+    belt_HashMapInt: ['belt_internalBuckets', 'belt_internalBucketsType', 'belt_Array'],
     belt_Map: ['belt_MapString', 'belt_MapInt'],
-    belt_MapString: [ 'belt_internalAVLtree', 'belt_Array', 'belt_internalMapString' ],
-    belt_MapInt: [ 'belt_internalAVLtree', 'belt_Array', 'belt_internalMapInt' ],
+    belt_MapString: ['belt_internalAVLtree', 'belt_Array', 'belt_internalMapString'],
+    belt_MapInt: ['belt_internalAVLtree', 'belt_Array', 'belt_internalMapInt'],
     belt_Set: ['belt_SetString', 'belt_SetInt'],
-    belt_SetString: [ 'belt_internalAVLset', 'belt_Array', 'belt_internalSetString' ],
-    belt_SetInt: [ 'belt_internalAVLset', 'belt_Array', 'belt_internalSetInt' ],
+    belt_SetString: ['belt_internalAVLset', 'belt_Array', 'belt_internalSetString'],
+    belt_SetInt: ['belt_internalAVLset', 'belt_Array', 'belt_internalSetInt'],
     belt_MutableMap: ['belt_MutableMapString', 'belt_MutableMapInt'],
-    belt_MutableMapString: ['belt_internalMapString', 'belt_internalAVLtree', 'belt_Array' ],
-    belt_MutableMapInt: ['belt_internalMapInt', 'belt_internalAVLtree', 'belt_Array' ],
+    belt_MutableMapString: ['belt_internalMapString', 'belt_internalAVLtree', 'belt_Array'],
+    belt_MutableMapInt: ['belt_internalMapInt', 'belt_internalAVLtree', 'belt_Array'],
     belt_MutableSet: ['belt_MutableSetString', 'belt_MutableSetInt'],
-    belt_MutableSetString: [ 'belt_internalSetString', 'belt_SortArrayString', 'belt_internalAVLset', 'belt_Array' ],
-    belt_MutableSetInt: [ 'belt_internalSetInt', 'belt_SortArrayInt', 'belt_internalAVLset', 'belt_Array' ],
+    belt_MutableSetString: ['belt_internalSetString', 'belt_SortArrayString', 'belt_internalAVLset', 'belt_Array'],
+    belt_MutableSetInt: ['belt_internalSetInt', 'belt_SortArrayInt', 'belt_internalAVLset', 'belt_Array'],
     belt_SortArray: ['belt_SortArrayString', 'belt_SortArrayInt'],
-    belt_SortArrayString: [ 'belt_Array' ],
-    belt_SortArrayInt: [ 'belt_Array' ],
-    belt_internalMapString: [ 'belt_internalAVLtree', 'belt_Array', 'belt_SortArray' ],
-    belt_internalMapInt: [ 'belt_internalAVLtree', 'belt_Array', 'belt_SortArray' ],
+    belt_SortArrayString: ['belt_Array'],
+    belt_SortArrayInt: ['belt_Array'],
+    belt_internalMapString: ['belt_internalAVLtree', 'belt_Array', 'belt_SortArray'],
+    belt_internalMapInt: ['belt_internalAVLtree', 'belt_Array', 'belt_SortArray'],
     belt_internalSetString: ['belt_internalAVLset', 'belt_Array', 'belt_SortArrayString'],
     belt_internalSetInt: ['belt_internalAVLset', 'belt_Array', 'belt_SortArrayInt'],
     js_typed_array: ['js_typed_array2'],
@@ -1076,15 +1076,14 @@ async function othersNinja() {
     ["js_typed_array2.ml", "js_typed_array2.cppo.ml", ""],
   ];
   var templateOthersRules = `
-${
-   `
+${`
 ${cppoList(belt_cppo_targets)}
 `
-}
+    }
 ${ccRuleList([
-  [ruleCC, bsc_flags, "belt.ml", ["belt.cmj", "belt.cmi"], externalDeps],
-  [ruleCC, bsc_flags, "node.ml", ["node.cmj", "node.cmi"], externalDeps],
-])}
+      [ruleCC, bsc_flags, "belt.ml", ["belt.cmj", "belt.cmi"], externalDeps],
+      [ruleCC, bsc_flags, "node.ml", ["node.cmj", "node.cmi"], externalDeps],
+    ])}
 `;
   var othersDirFiles = fs.readdirSync(othersDir, "ascii");
   var jsPrefixSourceFiles = othersDirFiles.filter(
@@ -1133,7 +1132,7 @@ ${ccRuleList([
     var all_deps = extra_deps.map(x => x + '.cmi')
       .concat(extra_deps.map(x => x + '.cmj'))
       .concat(`(alias ${js_package.name})`)
-    var self_cmi = belt_cppo_targets.map(([x]) => x).includes(entry + '.mli') ? [ entry + ".cmi" ] : [];
+    var self_cmi = belt_cppo_targets.map(([x]) => x).includes(entry + '.mli') ? [entry + ".cmi"] : [];
     updateDepsKVsByFile(entry + '.cmi', all_deps, depsMap)
     updateDepsKVsByFile(entry + '.cmj', all_deps.concat(self_cmi), depsMap)
   };
@@ -1145,10 +1144,10 @@ ${ccRuleList([
   writeFileAscii(
     path.join(othersDir, ninjaOutput),
     templateOthersRules +
-      jsOutput.join("\n") +
-      "\n" +
-      beltOutput.join("\n") +
-      "\n"
+    jsOutput.join("\n") +
+    "\n" +
+    beltOutput.join("\n") +
+    "\n"
   );
 }
 
@@ -1201,10 +1200,10 @@ async function stdlibNinja() {
     ruleCC,
     bsc_builtin_flags,
     "stdlib__no_aliases.ml",
-    [ "stdlib__no_aliases.cmj", "stdlib__no_aliases.cmi" ],
+    ["stdlib__no_aliases.cmj", "stdlib__no_aliases.cmi"],
     externalDeps.concat(["camlinternalFormatBasics.cmj", "camlinternalAtomic.cmj"]),
   ],
-])}
+  ])}
 `;
   var stdlibDirFiles = fs.readdirSync(stdlibModulesDir, "ascii");
   var sources = stdlibDirFiles.filter((x) => {
@@ -1270,14 +1269,14 @@ async function stdlibNinja() {
         ruleCC,
         bsc_flags,
         "stdlib.mli",
-        "stdlib.cmi" ,
+        "stdlib.cmi",
         ["(alias ./stdlib_modules/stdlib)"],
       ],
       [
         ruleCC_cmi,
         bsc_flags,
         "stdlib.ml",
-        "stdlib.cmj" ,
+        "stdlib.cmj",
         ["stdlib.cmi"],
       ]
     ])}
@@ -1360,7 +1359,7 @@ async function testNinja() {
       collectTarget(['es6_import.ml', 'es6_export.ml']),
       bsc_flags,
       ['../stdlib-412/stdlib.cmj'],
-      [ ".js", ".mjs" ]
+      [".js", ".mjs"]
     )
   );
   writeFileAscii(
@@ -1449,7 +1448,7 @@ function checkEffect() {
   // @ts-ignore
   assert(
     effect.length === black_list.size &&
-      effect.every((x) => black_list.has(x.file))
+    effect.every((x) => black_list.has(x.file))
   );
 
   console.log(effect);
@@ -1603,7 +1602,7 @@ function main() {
             cwd: jscompDir,
             stdio: [0, 1],
           });
-        } catch (e) {}
+        } catch (e) { }
         cp.execSync(
           `git clean -dfx jscomp ${process.platform} lib && rm -rf lib/js/*.js && rm -rf lib/es6/*.js`,
           {
