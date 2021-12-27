@@ -1,0 +1,5 @@
+(library
+  (name melange_ocaml_tree)
+  (libraries compiler-libs.common ppxlib)
+  (preprocess (pps ppxlib.metaquot))
+)

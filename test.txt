@@ -1,0 +1,2464 @@
+[
+  structure_item ([42,1608+0]..[42,1608+38])
+    Pstr_type Rec
+    [
+      type_declaration "mutable_flag" ([42,1608+5]..[42,1608+17]) ([42,1608+0]..[42,1608+38])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([42,1608+20]..[42,1608+38])
+              Ptyp_constr "Js_op.mutable_flag" ([42,1608+20]..[42,1608+38])
+              []
+    ]
+  structure_item ([44,1648+0]..[44,1648+24])
+    Pstr_type Rec
+    [
+      type_declaration "binop" ([44,1648+5]..[44,1648+10]) ([44,1648+0]..[44,1648+24])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([44,1648+13]..[44,1648+24])
+              Ptyp_constr "Js_op.binop" ([44,1648+13]..[44,1648+24])
+              []
+    ]
+  structure_item ([46,1674+0]..[46,1674+26])
+    Pstr_type Rec
+    [
+      type_declaration "int_op" ([46,1674+5]..[46,1674+11]) ([46,1674+0]..[46,1674+26])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([46,1674+14]..[46,1674+26])
+              Ptyp_constr "Js_op.int_op" ([46,1674+14]..[46,1674+26])
+              []
+    ]
+  structure_item ([48,1702+0]..[48,1702+22])
+    Pstr_type Rec
+    [
+      type_declaration "kind" ([48,1702+5]..[48,1702+9]) ([48,1702+0]..[48,1702+22])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([48,1702+12]..[48,1702+22])
+              Ptyp_constr "Js_op.kind" ([48,1702+12]..[48,1702+22])
+              []
+    ]
+  structure_item ([50,1726+0]..[50,1726+30])
+    Pstr_type Rec
+    [
+      type_declaration "property" ([50,1726+5]..[50,1726+13]) ([50,1726+0]..[50,1726+30])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([50,1726+16]..[50,1726+30])
+              Ptyp_constr "Js_op.property" ([50,1726+16]..[50,1726+30])
+              []
+    ]
+  structure_item ([52,1758+0]..[52,1758+26])
+    Pstr_type Rec
+    [
+      type_declaration "number" ([52,1758+5]..[52,1758+11]) ([52,1758+0]..[52,1758+26])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([52,1758+14]..[52,1758+26])
+              Ptyp_constr "Js_op.number" ([52,1758+14]..[52,1758+26])
+              []
+    ]
+  structure_item ([54,1786+0]..[54,1786+34])
+    Pstr_type Rec
+    [
+      type_declaration "ident_info" ([54,1786+5]..[54,1786+15]) ([54,1786+0]..[54,1786+34])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([54,1786+18]..[54,1786+34])
+              Ptyp_constr "Js_op.ident_info" ([54,1786+18]..[54,1786+34])
+              []
+    ]
+  structure_item ([56,1822+0]..[56,1822+28])
+    Pstr_type Rec
+    [
+      type_declaration "exports" ([56,1822+5]..[56,1822+12]) ([56,1822+0]..[56,1822+28])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([56,1822+15]..[56,1822+28])
+              Ptyp_constr "Js_op.exports" ([56,1822+15]..[56,1822+28])
+              []
+    ]
+  structure_item ([58,1852+0]..[58,1852+30])
+    Pstr_type Rec
+    [
+      type_declaration "tag_info" ([58,1852+5]..[58,1852+13]) ([58,1852+0]..[58,1852+30])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([58,1852+16]..[58,1852+30])
+              Ptyp_constr "Js_op.tag_info" ([58,1852+16]..[58,1852+30])
+              []
+    ]
+  structure_item ([60,1884+0]..[60,1884+41])
+    Pstr_type Rec
+    [
+      type_declaration "property_name" ([60,1884+5]..[60,1884+18]) ([60,1884+0]..[60,1884+41])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([60,1884+22]..[60,1884+41])
+              Ptyp_constr "Js_op.property_name" ([60,1884+22]..[60,1884+41])
+              []
+    ]
+  structure_item ([62,1927+0]..[370,11291+9])
+    Pstr_type Rec
+    [
+      type_declaration "label" ([62,1927+5]..[62,1927+10]) ([62,1927+0]..[62,1927+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([62,1927+13]..[62,1927+19])
+              Ptyp_constr "string" ([62,1927+13]..[62,1927+19])
+              []
+      type_declaration "ident" ([65,1949+4]..[65,1949+9]) ([65,1949+0]..[65,1949+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([65,1949+12]..[65,1949+19])
+              Ptyp_constr "Ident.t" ([65,1949+12]..[65,1949+19])
+              []
+      type_declaration "module_id" ([73,2148+4]..[73,2148+13]) ([73,2148+0]..[75,2198+1])
+        attribute "ocaml.text"
+          [
+            structure_item ([67,2003+0]..[70,2142+3])
+              Pstr_eval
+              expression ([67,2003+0]..[70,2142+3])
+                Pexp_constant PConst_string(" object literal, if key is ident, in this case, it might be renamed by\n    Google Closure  optimizer,\n    currently we always use quote\n ",([67,2003+0]..[70,2142+3]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([74,2166+2]..[74,2166+13])
+                Immutable
+                "id" ([74,2166+2]..[74,2166+4])                core_type ([74,2166+7]..[74,2166+12])
+                  Ptyp_constr "ident" ([74,2166+7]..[74,2166+12])
+                  []
+              ([74,2166+14]..[74,2166+31])
+                Immutable
+                "kind" ([74,2166+14]..[74,2166+18])                core_type ([74,2166+21]..[74,2166+31])
+                  Ptyp_constr "Js_op.kind" ([74,2166+21]..[74,2166+31])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "required_modules" ([76,2200+4]..[76,2200+20]) ([76,2200+0]..[76,2200+37])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([76,2200+23]..[76,2200+37])
+              Ptyp_constr "list" ([76,2200+33]..[76,2200+37])
+              [
+                core_type ([76,2200+23]..[76,2200+32])
+                  Ptyp_constr "module_id" ([76,2200+23]..[76,2200+32])
+                  []
+              ]
+      type_declaration "vident" ([77,2238+4]..[77,2238+10]) ([77,2238+0]..[79,2267+42])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              ([78,2251+2]..[78,2251+15])
+                "Id" ([78,2251+4]..[78,2251+6])
+                [
+                  core_type ([78,2251+10]..[78,2251+15])
+                    Ptyp_constr "ident" ([78,2251+10]..[78,2251+15])
+                    []
+                ]
+                None
+              ([79,2267+2]..[79,2267+42])
+                "Qualified" ([79,2267+4]..[79,2267+13])
+                [
+                  core_type ([79,2267+17]..[79,2267+26])
+                    Ptyp_constr "module_id" ([79,2267+17]..[79,2267+26])
+                    []
+                  core_type ([79,2267+29]..[79,2267+42])
+                    Ptyp_constr "option" ([79,2267+36]..[79,2267+42])
+                    [
+                      core_type ([79,2267+29]..[79,2267+35])
+                        Ptyp_constr "string" ([79,2267+29]..[79,2267+35])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "exception_ident" ([96,2858+4]..[96,2858+19]) ([96,2858+0]..[96,2858+27])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([96,2858+22]..[96,2858+27])
+              Ptyp_constr "ident" ([96,2858+22]..[96,2858+27])
+              []
+      type_declaration "for_ident" ([98,2887+4]..[98,2887+13]) ([98,2887+0]..[98,2887+21])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([98,2887+16]..[98,2887+21])
+              Ptyp_constr "ident" ([98,2887+16]..[98,2887+21])
+              []
+      type_declaration "for_direction" ([100,2910+4]..[100,2910+17]) ([100,2910+0]..[100,2910+40])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([100,2910+20]..[100,2910+40])
+              Ptyp_constr "Js_op.direction_flag" ([100,2910+20]..[100,2910+40])
+              []
+      type_declaration "property_map" ([102,2952+4]..[102,2952+16]) ([102,2952+0]..[103,2971+37])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([103,2971+4]..[103,2971+37])
+              Ptyp_constr "list" ([103,2971+33]..[103,2971+37])
+              [
+                core_type ([103,2971+5]..[103,2971+31])
+                  Ptyp_tuple
+                  [
+                    core_type ([103,2971+5]..[103,2971+18])
+                      Ptyp_constr "property_name" ([103,2971+5]..[103,2971+18])
+                      []
+                    core_type ([103,2971+21]..[103,2971+31])
+                      Ptyp_constr "expression" ([103,2971+21]..[103,2971+31])
+                      []
+                  ]
+              ]
+      type_declaration "length_object" ([104,3009+4]..[104,3009+17]) ([104,3009+0]..[104,3009+39])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([104,3009+20]..[104,3009+39])
+              Ptyp_constr "Js_op.length_object" ([104,3009+20]..[104,3009+39])
+              []
+      type_declaration "expression_desc" ([105,3049+4]..[105,3049+19]) ([105,3049+0]..[204,6945+8])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              ([106,3071+2]..[106,3071+40])
+                "Length" ([106,3071+4]..[106,3071+10])
+                [
+                  core_type ([106,3071+14]..[106,3071+24])
+                    Ptyp_constr "expression" ([106,3071+14]..[106,3071+24])
+                    []
+                  core_type ([106,3071+27]..[106,3071+40])
+                    Ptyp_constr "length_object" ([106,3071+27]..[106,3071+40])
+                    []
+                ]
+                None
+              ([107,3112+2]..[107,3112+29])
+                "Char_of_int" ([107,3112+4]..[107,3112+15])
+                [
+                  core_type ([107,3112+19]..[107,3112+29])
+                    Ptyp_constr "expression" ([107,3112+19]..[107,3112+29])
+                    []
+                ]
+                None
+              ([108,3142+2]..[108,3142+29])
+                "Char_to_int" ([108,3142+4]..[108,3142+15])
+                [
+                  core_type ([108,3142+19]..[108,3142+29])
+                    Ptyp_constr "expression" ([108,3142+19]..[108,3142+29])
+                    []
+                ]
+                None
+              ([109,3172+2]..[109,3172+38])
+                "Is_null_or_undefined" ([109,3172+4]..[109,3172+24])
+                attribute "ocaml.doc"
+                  [
+                    structure_item ([110,3211+4]..[110,3211+42])
+                      Pstr_eval
+                      expression ([110,3211+4]..[110,3211+42])
+                        Pexp_constant PConst_string(" where we use a trick [== null ] ",([110,3211+4]..[110,3211+42]),None)
+                  ]
+                [
+                  core_type ([109,3172+28]..[109,3172+38])
+                    Ptyp_constr "expression" ([109,3172+28]..[109,3172+38])
+                    []
+                ]
+                None
+              ([111,3254+2]..[111,3254+44])
+                "String_append" ([111,3254+4]..[111,3254+17])
+                [
+                  core_type ([111,3254+21]..[111,3254+31])
+                    Ptyp_constr "expression" ([111,3254+21]..[111,3254+31])
+                    []
+                  core_type ([111,3254+34]..[111,3254+44])
+                    Ptyp_constr "expression" ([111,3254+34]..[111,3254+44])
+                    []
+                ]
+                None
+              ([112,3299+2]..[112,3299+16])
+                "Bool" ([112,3299+4]..[112,3299+8])
+                [
+                  core_type ([112,3299+12]..[112,3299+16])
+                    Ptyp_constr "bool" ([112,3299+12]..[112,3299+16])
+                    []
+                ]
+                None
+              ([116,3470+2]..[116,3470+24])
+                "Typeof" ([116,3470+4]..[116,3470+10])
+                [
+                  core_type ([116,3470+14]..[116,3470+24])
+                    Ptyp_constr "expression" ([116,3470+14]..[116,3470+24])
+                    []
+                ]
+                None
+              ([117,3495+2]..[117,3495+24])
+                "Js_not" ([117,3495+4]..[117,3495+10])
+                [
+                  core_type ([117,3495+14]..[117,3495+24])
+                    Ptyp_constr "expression" ([117,3495+14]..[117,3495+24])
+                    []
+                ]
+                None
+              ([119,3604+2]..[119,3604+34])
+                "Seq" ([119,3604+4]..[119,3604+7])
+                [
+                  core_type ([119,3604+11]..[119,3604+21])
+                    Ptyp_constr "expression" ([119,3604+11]..[119,3604+21])
+                    []
+                  core_type ([119,3604+24]..[119,3604+34])
+                    Ptyp_constr "expression" ([119,3604+24]..[119,3604+34])
+                    []
+                ]
+                None
+              ([120,3639+2]..[120,3639+48])
+                "Cond" ([120,3639+4]..[120,3639+8])
+                [
+                  core_type ([120,3639+12]..[120,3639+22])
+                    Ptyp_constr "expression" ([120,3639+12]..[120,3639+22])
+                    []
+                  core_type ([120,3639+25]..[120,3639+35])
+                    Ptyp_constr "expression" ([120,3639+25]..[120,3639+35])
+                    []
+                  core_type ([120,3639+38]..[120,3639+48])
+                    Ptyp_constr "expression" ([120,3639+38]..[120,3639+48])
+                    []
+                ]
+                None
+              ([121,3688+2]..[121,3688+42])
+                "Bin" ([121,3688+4]..[121,3688+7])
+                [
+                  core_type ([121,3688+11]..[121,3688+16])
+                    Ptyp_constr "binop" ([121,3688+11]..[121,3688+16])
+                    []
+                  core_type ([121,3688+19]..[121,3688+29])
+                    Ptyp_constr "expression" ([121,3688+19]..[121,3688+29])
+                    []
+                  core_type ([121,3688+32]..[121,3688+42])
+                    Ptyp_constr "expression" ([121,3688+32]..[121,3688+42])
+                    []
+                ]
+                None
+              ([126,3937+2]..[126,3937+39])
+                "FlatCall" ([126,3937+4]..[126,3937+12])
+                [
+                  core_type ([126,3937+16]..[126,3937+26])
+                    Ptyp_constr "expression" ([126,3937+16]..[126,3937+26])
+                    []
+                  core_type ([126,3937+29]..[126,3937+39])
+                    Ptyp_constr "expression" ([126,3937+29]..[126,3937+39])
+                    []
+                ]
+                None
+              ([132,4171+2]..[132,4171+57])
+                "Call" ([132,4171+4]..[132,4171+8])
+                [
+                  core_type ([132,4171+12]..[132,4171+22])
+                    Ptyp_constr "expression" ([132,4171+12]..[132,4171+22])
+                    []
+                  core_type ([132,4171+25]..[132,4171+40])
+                    Ptyp_constr "list" ([132,4171+36]..[132,4171+40])
+                    [
+                      core_type ([132,4171+25]..[132,4171+35])
+                        Ptyp_constr "expression" ([132,4171+25]..[132,4171+35])
+                        []
+                    ]
+                  core_type ([132,4171+43]..[132,4171+57])
+                    Ptyp_constr "Js_call_info.t" ([132,4171+43]..[132,4171+57])
+                    []
+                ]
+                None
+              ([137,4380+2]..[137,4380+43])
+                "String_index" ([137,4380+4]..[137,4380+16])
+                [
+                  core_type ([137,4380+20]..[137,4380+30])
+                    Ptyp_constr "expression" ([137,4380+20]..[137,4380+30])
+                    []
+                  core_type ([137,4380+33]..[137,4380+43])
+                    Ptyp_constr "expression" ([137,4380+33]..[137,4380+43])
+                    []
+                ]
+                None
+              ([139,4442+2]..[139,4442+42])
+                "Array_index" ([139,4442+4]..[139,4442+15])
+                [
+                  core_type ([139,4442+19]..[139,4442+29])
+                    Ptyp_constr "expression" ([139,4442+19]..[139,4442+29])
+                    []
+                  core_type ([139,4442+32]..[139,4442+42])
+                    Ptyp_constr "expression" ([139,4442+32]..[139,4442+42])
+                    []
+                ]
+                None
+              ([146,4695+2]..[146,4695+54])
+                "Static_index" ([146,4695+4]..[146,4695+16])
+                [
+                  core_type ([146,4695+20]..[146,4695+30])
+                    Ptyp_constr "expression" ([146,4695+20]..[146,4695+30])
+                    []
+                  core_type ([146,4695+33]..[146,4695+39])
+                    Ptyp_constr "string" ([146,4695+33]..[146,4695+39])
+                    []
+                  core_type ([146,4695+42]..[146,4695+54])
+                    Ptyp_constr "option" ([146,4695+48]..[146,4695+54])
+                    [
+                      core_type ([146,4695+42]..[146,4695+47])
+                        Ptyp_constr "int32" ([146,4695+42]..[146,4695+47])
+                        []
+                    ]
+                ]
+                None
+              ([157,5121+2]..[157,5121+46])
+                "New" ([157,5121+4]..[157,5121+7])
+                [
+                  core_type ([157,5121+11]..[157,5121+21])
+                    Ptyp_constr "expression" ([157,5121+11]..[157,5121+21])
+                    []
+                  core_type ([157,5121+24]..[157,5121+46])
+                    Ptyp_constr "option" ([157,5121+40]..[157,5121+46])
+                    [
+                      core_type ([157,5121+24]..[157,5121+39])
+                        Ptyp_constr "list" ([157,5121+35]..[157,5121+39])
+                        [
+                          core_type ([157,5121+24]..[157,5121+34])
+                            Ptyp_constr "expression" ([157,5121+24]..[157,5121+34])
+                            []
+                        ]
+                    ]
+                ]
+                None
+              ([158,5194+2]..[158,5194+17])
+                "Var" ([158,5194+4]..[158,5194+7])
+                [
+                  core_type ([158,5194+11]..[158,5194+17])
+                    Ptyp_constr "vident" ([158,5194+11]..[158,5194+17])
+                    []
+                ]
+                None
+              ([159,5212+2]..[159,5212+52])
+                "Fun" ([159,5212+4]..[159,5212+7])
+                [
+                  core_type ([159,5212+11]..[159,5212+15])
+                    Ptyp_constr "bool" ([159,5212+11]..[159,5212+15])
+                    []
+                  core_type ([159,5212+18]..[159,5212+28])
+                    Ptyp_constr "list" ([159,5212+24]..[159,5212+28])
+                    [
+                      core_type ([159,5212+18]..[159,5212+23])
+                        Ptyp_constr "ident" ([159,5212+18]..[159,5212+23])
+                        []
+                    ]
+                  core_type ([159,5212+32]..[159,5212+37])
+                    Ptyp_constr "block" ([159,5212+32]..[159,5212+37])
+                    []
+                  core_type ([159,5212+40]..[159,5212+52])
+                    Ptyp_constr "Js_fun_env.t" ([159,5212+40]..[159,5212+52])
+                    []
+                ]
+                None
+              ([163,5356+2]..[163,5356+24])
+                "Str" ([163,5356+4]..[163,5356+7])
+                [
+                  core_type ([163,5356+11]..[163,5356+15])
+                    Ptyp_constr "bool" ([163,5356+11]..[163,5356+15])
+                    []
+                  core_type ([163,5356+18]..[163,5356+24])
+                    Ptyp_constr "string" ([163,5356+18]..[163,5356+24])
+                    []
+                ]
+                None
+              ([172,5769+2]..[172,5769+21])
+                "Unicode" ([172,5769+4]..[172,5769+11])
+                [
+                  core_type ([172,5769+15]..[172,5769+21])
+                    Ptyp_constr "string" ([172,5769+15]..[172,5769+21])
+                    []
+                ]
+                None
+              ([174,5845+2]..[174,5845+32])
+                "Raw_js_code" ([174,5845+4]..[174,5845+15])
+                [
+                  core_type ([174,5845+19]..[174,5845+32])
+                    Ptyp_constr "Js_raw_info.t" ([174,5845+19]..[174,5845+32])
+                    []
+                ]
+                None
+              ([177,5910+2]..[177,5910+43])
+                "Array" ([177,5910+4]..[177,5910+9])
+                [
+                  core_type ([177,5910+13]..[177,5910+28])
+                    Ptyp_constr "list" ([177,5910+24]..[177,5910+28])
+                    [
+                      core_type ([177,5910+13]..[177,5910+23])
+                        Ptyp_constr "expression" ([177,5910+13]..[177,5910+23])
+                        []
+                    ]
+                  core_type ([177,5910+31]..[177,5910+43])
+                    Ptyp_constr "mutable_flag" ([177,5910+31]..[177,5910+43])
+                    []
+                ]
+                None
+              ([178,5954+2]..[178,5954+39])
+                "Optional_block" ([178,5954+4]..[178,5954+18])
+                [
+                  core_type ([178,5954+22]..[178,5954+32])
+                    Ptyp_constr "expression" ([178,5954+22]..[178,5954+32])
+                    []
+                  core_type ([178,5954+35]..[178,5954+39])
+                    Ptyp_constr "bool" ([178,5954+35]..[178,5954+39])
+                    []
+                ]
+                None
+              ([180,6028+2]..[180,6028+72])
+                "Caml_block" ([180,6028+4]..[180,6028+14])
+                [
+                  core_type ([180,6028+18]..[180,6028+33])
+                    Ptyp_constr "list" ([180,6028+29]..[180,6028+33])
+                    [
+                      core_type ([180,6028+18]..[180,6028+28])
+                        Ptyp_constr "expression" ([180,6028+18]..[180,6028+28])
+                        []
+                    ]
+                  core_type ([180,6028+36]..[180,6028+48])
+                    Ptyp_constr "mutable_flag" ([180,6028+36]..[180,6028+48])
+                    []
+                  core_type ([180,6028+51]..[180,6028+61])
+                    Ptyp_constr "expression" ([180,6028+51]..[180,6028+61])
+                    []
+                  core_type ([180,6028+64]..[180,6028+72])
+                    Ptyp_constr "tag_info" ([180,6028+64]..[180,6028+72])
+                    []
+                ]
+                None
+              ([194,6564+2]..[194,6564+32])
+                "Caml_block_tag" ([194,6564+4]..[194,6564+18])
+                [
+                  core_type ([194,6564+22]..[194,6564+32])
+                    Ptyp_constr "expression" ([194,6564+22]..[194,6564+32])
+                    []
+                ]
+                None
+              ([201,6883+2]..[201,6883+20])
+                "Number" ([201,6883+4]..[201,6883+10])
+                [
+                  core_type ([201,6883+14]..[201,6883+20])
+                    Ptyp_constr "number" ([201,6883+14]..[201,6883+20])
+                    []
+                ]
+                None
+              ([202,6904+2]..[202,6904+26])
+                "Object" ([202,6904+4]..[202,6904+10])
+                [
+                  core_type ([202,6904+14]..[202,6904+26])
+                    Ptyp_constr "property_map" ([202,6904+14]..[202,6904+26])
+                    []
+                ]
+                None
+              ([203,6931+2]..[203,6931+13])
+                "Undefined" ([203,6931+4]..[203,6931+13])
+                []
+                None
+              ([204,6945+2]..[204,6945+8])
+                "Null" ([204,6945+4]..[204,6945+8])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "for_ident_expression" ([205,6954+4]..[205,6954+24]) ([205,6954+0]..[205,6954+37])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([205,6954+27]..[205,6954+37])
+              Ptyp_constr "expression" ([205,6954+27]..[205,6954+37])
+              []
+      type_declaration "finish_ident_expression" ([207,7003+4]..[207,7003+27]) ([207,7003+0]..[207,7003+40])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([207,7003+30]..[207,7003+40])
+              Ptyp_constr "expression" ([207,7003+30]..[207,7003+40])
+              []
+      type_declaration "case_clause" ([276,8665+4]..[276,8665+15]) ([276,8665+0]..[280,8786+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([277,8685+2]..[277,8685+23])
+                Immutable
+                "switch_body" ([277,8685+2]..[277,8685+13])                core_type ([277,8685+16]..[277,8685+21])
+                  Ptyp_constr "block" ([277,8685+16]..[277,8685+21])
+                  []
+              ([278,8709+2]..[278,8709+24])
+                Immutable
+                "should_break" ([278,8709+2]..[278,8709+14])                core_type ([278,8709+18]..[278,8709+22])
+                  Ptyp_constr "bool" ([278,8709+18]..[278,8709+22])
+                  []
+              ([279,8758+2]..[279,8758+27])
+                Immutable
+                "comment" ([279,8758+2]..[279,8758+9])                core_type ([279,8758+12]..[279,8758+25])
+                  Ptyp_constr "option" ([279,8758+19]..[279,8758+25])
+                  [
+                    core_type ([279,8758+12]..[279,8758+18])
+                      Ptyp_constr "string" ([279,8758+12]..[279,8758+18])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "string_clause" ([282,8789+4]..[282,8789+17]) ([282,8789+0]..[282,8789+40])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([282,8789+20]..[282,8789+40])
+              Ptyp_tuple
+              [
+                core_type ([282,8789+20]..[282,8789+26])
+                  Ptyp_constr "string" ([282,8789+20]..[282,8789+26])
+                  []
+                core_type ([282,8789+29]..[282,8789+40])
+                  Ptyp_constr "case_clause" ([282,8789+29]..[282,8789+40])
+                  []
+              ]
+      type_declaration "int_clause" ([283,8830+4]..[283,8830+14]) ([283,8830+0]..[283,8830+35])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([283,8830+18]..[283,8830+35])
+              Ptyp_tuple
+              [
+                core_type ([283,8830+18]..[283,8830+21])
+                  Ptyp_constr "int" ([283,8830+18]..[283,8830+21])
+                  []
+                core_type ([283,8830+24]..[283,8830+35])
+                  Ptyp_constr "case_clause" ([283,8830+24]..[283,8830+35])
+                  []
+              ]
+      type_declaration "statement_desc" ([285,8867+4]..[285,8867+18]) ([285,8867+0]..[315,10253+12])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              ([286,8888+2]..[286,8888+18])
+                "Block" ([286,8888+4]..[286,8888+9])
+                [
+                  core_type ([286,8888+13]..[286,8888+18])
+                    Ptyp_constr "block" ([286,8888+13]..[286,8888+18])
+                    []
+                ]
+                None
+              ([287,8907+2]..[287,8907+36])
+                "Variable" ([287,8907+4]..[287,8907+12])
+                [
+                  core_type ([287,8907+16]..[287,8907+36])
+                    Ptyp_constr "variable_declaration" ([287,8907+16]..[287,8907+36])
+                    []
+                ]
+                None
+              ([289,9005+2]..[289,9005+21])
+                "Exp" ([289,9005+4]..[289,9005+7])
+                [
+                  core_type ([289,9005+11]..[289,9005+21])
+                    Ptyp_constr "expression" ([289,9005+11]..[289,9005+21])
+                    []
+                ]
+                None
+              ([290,9027+2]..[290,9027+36])
+                "If" ([290,9027+4]..[290,9027+6])
+                [
+                  core_type ([290,9027+10]..[290,9027+20])
+                    Ptyp_constr "expression" ([290,9027+10]..[290,9027+20])
+                    []
+                  core_type ([290,9027+23]..[290,9027+28])
+                    Ptyp_constr "block" ([290,9027+23]..[290,9027+28])
+                    []
+                  core_type ([290,9027+31]..[290,9027+36])
+                    Ptyp_constr "block" ([290,9027+31]..[290,9027+36])
+                    []
+                ]
+                None
+              ([291,9064+2]..[292,9112+22])
+                "While" ([291,9064+4]..[291,9064+9])
+                [
+                  core_type ([291,9064+13]..[291,9064+25])
+                    Ptyp_constr "option" ([291,9064+19]..[291,9064+25])
+                    [
+                      core_type ([291,9064+13]..[291,9064+18])
+                        Ptyp_constr "label" ([291,9064+13]..[291,9064+18])
+                        []
+                    ]
+                  core_type ([291,9064+29]..[291,9064+39])
+                    Ptyp_constr "expression" ([291,9064+29]..[291,9064+39])
+                    []
+                  core_type ([291,9064+42]..[291,9064+47])
+                    Ptyp_constr "block" ([291,9064+42]..[291,9064+47])
+                    []
+                  core_type ([292,9112+10]..[292,9112+22])
+                    Ptyp_constr "Js_closure.t" ([292,9112+10]..[292,9112+22])
+                    []
+                ]
+                None
+              ([293,9206+2]..[295,9322+22])
+                "ForRange" ([293,9206+4]..[293,9206+12])
+                [
+                  core_type ([293,9206+16]..[293,9206+43])
+                    Ptyp_constr "option" ([293,9206+37]..[293,9206+43])
+                    [
+                      core_type ([293,9206+16]..[293,9206+36])
+                        Ptyp_constr "for_ident_expression" ([293,9206+16]..[293,9206+36])
+                        []
+                    ]
+                  core_type ([293,9206+46]..[293,9206+69])
+                    Ptyp_constr "finish_ident_expression" ([293,9206+46]..[293,9206+69])
+                    []
+                  core_type ([294,9278+8]..[294,9278+17])
+                    Ptyp_constr "for_ident" ([294,9278+8]..[294,9278+17])
+                    []
+                  core_type ([294,9278+22]..[294,9278+35])
+                    Ptyp_constr "for_direction" ([294,9278+22]..[294,9278+35])
+                    []
+                  core_type ([294,9278+38]..[294,9278+43])
+                    Ptyp_constr "block" ([294,9278+38]..[294,9278+43])
+                    []
+                  core_type ([295,9322+10]..[295,9322+22])
+                    Ptyp_constr "Js_closure.t" ([295,9322+10]..[295,9322+22])
+                    []
+                ]
+                None
+              ([296,9345+2]..[296,9345+21])
+                "Continue" ([296,9345+4]..[296,9345+12])
+                [
+                  core_type ([296,9345+16]..[296,9345+21])
+                    Ptyp_constr "label" ([296,9345+16]..[296,9345+21])
+                    []
+                ]
+                None
+              ([297,9367+2]..[297,9367+9])
+                "Break" ([297,9367+4]..[297,9367+9])
+                []
+                None
+              ([298,9416+2]..[298,9416+24])
+                "Return" ([298,9416+4]..[298,9416+10])
+                [
+                  core_type ([298,9416+14]..[298,9416+24])
+                    Ptyp_constr "expression" ([298,9416+14]..[298,9416+24])
+                    []
+                ]
+                None
+              ([311,10032+2]..[311,10032+61])
+                "Int_switch" ([311,10032+4]..[311,10032+14])
+                [
+                  core_type ([311,10032+18]..[311,10032+28])
+                    Ptyp_constr "expression" ([311,10032+18]..[311,10032+28])
+                    []
+                  core_type ([311,10032+31]..[311,10032+46])
+                    Ptyp_constr "list" ([311,10032+42]..[311,10032+46])
+                    [
+                      core_type ([311,10032+31]..[311,10032+41])
+                        Ptyp_constr "int_clause" ([311,10032+31]..[311,10032+41])
+                        []
+                    ]
+                  core_type ([311,10032+49]..[311,10032+61])
+                    Ptyp_constr "option" ([311,10032+55]..[311,10032+61])
+                    [
+                      core_type ([311,10032+49]..[311,10032+54])
+                        Ptyp_constr "block" ([311,10032+49]..[311,10032+54])
+                        []
+                    ]
+                ]
+                None
+              ([312,10094+2]..[312,10094+67])
+                "String_switch" ([312,10094+4]..[312,10094+17])
+                [
+                  core_type ([312,10094+21]..[312,10094+31])
+                    Ptyp_constr "expression" ([312,10094+21]..[312,10094+31])
+                    []
+                  core_type ([312,10094+34]..[312,10094+52])
+                    Ptyp_constr "list" ([312,10094+48]..[312,10094+52])
+                    [
+                      core_type ([312,10094+34]..[312,10094+47])
+                        Ptyp_constr "string_clause" ([312,10094+34]..[312,10094+47])
+                        []
+                    ]
+                  core_type ([312,10094+55]..[312,10094+67])
+                    Ptyp_constr "option" ([312,10094+61]..[312,10094+67])
+                    [
+                      core_type ([312,10094+55]..[312,10094+60])
+                        Ptyp_constr "block" ([312,10094+55]..[312,10094+60])
+                        []
+                    ]
+                ]
+                None
+              ([313,10162+2]..[313,10162+23])
+                "Throw" ([313,10162+4]..[313,10162+9])
+                [
+                  core_type ([313,10162+13]..[313,10162+23])
+                    Ptyp_constr "expression" ([313,10162+13]..[313,10162+23])
+                    []
+                ]
+                None
+              ([314,10186+2]..[314,10186+66])
+                "Try" ([314,10186+4]..[314,10186+7])
+                [
+                  core_type ([314,10186+11]..[314,10186+16])
+                    Ptyp_constr "block" ([314,10186+11]..[314,10186+16])
+                    []
+                  core_type ([314,10186+19]..[314,10186+51])
+                    Ptyp_constr "option" ([314,10186+45]..[314,10186+51])
+                    [
+                      core_type ([314,10186+20]..[314,10186+43])
+                        Ptyp_tuple
+                        [
+                          core_type ([314,10186+20]..[314,10186+35])
+                            Ptyp_constr "exception_ident" ([314,10186+20]..[314,10186+35])
+                            []
+                          core_type ([314,10186+38]..[314,10186+43])
+                            Ptyp_constr "block" ([314,10186+38]..[314,10186+43])
+                            []
+                        ]
+                    ]
+                  core_type ([314,10186+54]..[314,10186+66])
+                    Ptyp_constr "option" ([314,10186+60]..[314,10186+66])
+                    [
+                      core_type ([314,10186+54]..[314,10186+59])
+                        Ptyp_constr "block" ([314,10186+54]..[314,10186+59])
+                        []
+                    ]
+                ]
+                None
+              ([315,10253+2]..[315,10253+12])
+                "Debugger" ([315,10253+4]..[315,10253+12])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "expression" ([319,10269+4]..[319,10269+14]) ([319,10269+0]..[322,10352+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([320,10288+2]..[320,10288+36])
+                Immutable
+                "expression_desc" ([320,10288+2]..[320,10288+17])                core_type ([320,10288+20]..[320,10288+35])
+                  Ptyp_constr "expression_desc" ([320,10288+20]..[320,10288+35])
+                  []
+              ([321,10325+2]..[321,10325+26])
+                Immutable
+                "comment" ([321,10325+2]..[321,10325+9])                core_type ([321,10325+12]..[321,10325+25])
+                  Ptyp_constr "option" ([321,10325+19]..[321,10325+25])
+                  [
+                    core_type ([321,10325+12]..[321,10325+18])
+                      Ptyp_constr "string" ([321,10325+12]..[321,10325+18])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "statement" ([324,10355+4]..[324,10355+13]) ([324,10355+0]..[327,10436+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([325,10373+2]..[325,10373+35])
+                Immutable
+                "statement_desc" ([325,10373+2]..[325,10373+16])                core_type ([325,10373+20]..[325,10373+34])
+                  Ptyp_constr "statement_desc" ([325,10373+20]..[325,10373+34])
+                  []
+              ([326,10409+2]..[326,10409+26])
+                Immutable
+                "comment" ([326,10409+2]..[326,10409+9])                core_type ([326,10409+12]..[326,10409+25])
+                  Ptyp_constr "option" ([326,10409+19]..[326,10409+25])
+                  [
+                    core_type ([326,10409+12]..[326,10409+18])
+                      Ptyp_constr "string" ([326,10409+12]..[326,10409+18])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "variable_declaration" ([329,10439+4]..[329,10439+24]) ([329,10439+0]..[334,10566+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([330,10468+2]..[330,10468+17])
+                Immutable
+                "ident" ([330,10468+2]..[330,10468+7])                core_type ([330,10468+10]..[330,10468+15])
+                  Ptyp_constr "ident" ([330,10468+10]..[330,10468+15])
+                  []
+              ([331,10486+2]..[331,10486+29])
+                Immutable
+                "value" ([331,10486+2]..[331,10486+7])                core_type ([331,10486+10]..[331,10486+28])
+                  Ptyp_constr "option" ([331,10486+22]..[331,10486+28])
+                  [
+                    core_type ([331,10486+10]..[331,10486+20])
+                      Ptyp_constr "expression" ([331,10486+10]..[331,10486+20])
+                      []
+                  ]
+              ([332,10516+2]..[332,10516+22])
+                Immutable
+                "property" ([332,10516+2]..[332,10516+10])                core_type ([332,10516+13]..[332,10516+21])
+                  Ptyp_constr "property" ([332,10516+13]..[332,10516+21])
+                  []
+              ([333,10539+2]..[333,10539+26])
+                Immutable
+                "ident_info" ([333,10539+2]..[333,10539+12])                core_type ([333,10539+15]..[333,10539+25])
+                  Ptyp_constr "ident_info" ([333,10539+15]..[333,10539+25])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "block" ([339,10678+4]..[339,10678+9]) ([339,10678+0]..[339,10678+27])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([339,10678+13]..[339,10678+27])
+              Ptyp_constr "list" ([339,10678+23]..[339,10678+27])
+              [
+                core_type ([339,10678+13]..[339,10678+22])
+                  Ptyp_constr "statement" ([339,10678+13]..[339,10678+22])
+                  []
+              ]
+      type_declaration "program" ([341,10707+4]..[341,10707+11]) ([341,10707+0]..[346,10793+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([342,10723+2]..[342,10723+17])
+                Immutable
+                "block" ([342,10723+2]..[342,10723+7])                core_type ([342,10723+10]..[342,10723+15])
+                  Ptyp_constr "block" ([342,10723+10]..[342,10723+15])
+                  []
+              ([343,10741+2]..[343,10741+21])
+                Immutable
+                "exports" ([343,10741+2]..[343,10741+9])                core_type ([343,10741+12]..[343,10741+19])
+                  Ptyp_constr "exports" ([343,10741+12]..[343,10741+19])
+                  []
+              ([344,10763+2]..[344,10763+28])
+                Immutable
+                "export_set" ([344,10763+2]..[344,10763+12])                core_type ([344,10763+15]..[344,10763+26])
+                  Ptyp_constr "Set_ident.t" ([344,10763+15]..[344,10763+26])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "deps_program" ([347,10795+4]..[347,10795+16]) ([347,10795+0]..[370,11291+9])
+        attribute "deriving"
+          [
+            structure_item ([353,10940+12]..[370,11291+8])
+              Pstr_eval
+              expression ([353,10940+12]..[370,11291+8])
+                Pexp_record
+                [
+                  "excludes" ([353,10940+13]..[353,10940+21])
+                    expression ([353,10940+25]..[370,11291+6])
+                      Pexp_array
+                      [
+                        expression ([354,10968+4]..[354,10968+16])
+                          Pexp_ident "deps_program" ([354,10968+4]..[354,10968+16])
+                        expression ([355,10987+4]..[355,10987+14])
+                          Pexp_ident "int_clause" ([355,10987+4]..[355,10987+14])
+                        expression ([356,11003+4]..[356,11003+17])
+                          Pexp_ident "string_clause" ([356,11003+4]..[356,11003+17])
+                        expression ([357,11023+4]..[357,11023+17])
+                          Pexp_ident "for_direction" ([357,11023+4]..[357,11023+17])
+                        expression ([359,11069+4]..[359,11069+17])
+                          Pexp_ident "for_direction" ([359,11069+4]..[359,11069+17])
+                        expression ([360,11088+4]..[360,11088+19])
+                          Pexp_ident "expression_desc" ([360,11088+4]..[360,11088+19])
+                        expression ([361,11109+4]..[361,11109+18])
+                          Pexp_ident "statement_desc" ([361,11109+4]..[361,11109+18])
+                        expression ([362,11129+4]..[362,11129+24])
+                          Pexp_ident "for_ident_expression" ([362,11129+4]..[362,11129+24])
+                        expression ([363,11155+4]..[363,11155+9])
+                          Pexp_ident "label" ([363,11155+4]..[363,11155+9])
+                        expression ([364,11166+4]..[364,11166+27])
+                          Pexp_ident "finish_ident_expression" ([364,11166+4]..[364,11166+27])
+                        expression ([365,11195+4]..[365,11195+16])
+                          Pexp_ident "property_map" ([365,11195+4]..[365,11195+16])
+                        expression ([366,11213+4]..[366,11213+17])
+                          Pexp_ident "length_object" ([366,11213+4]..[366,11213+17])
+                        expression ([368,11253+4]..[368,11253+20])
+                          Pexp_ident "required_modules" ([368,11253+4]..[368,11253+20])
+                        expression ([369,11275+4]..[369,11275+15])
+                          Pexp_ident "case_clause" ([369,11275+4]..[369,11275+15])
+                      ]
+                ]
+                None
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([349,10818+4]..[349,10818+23])
+                Immutable
+                "program" ([349,10818+4]..[349,10818+11])                core_type ([349,10818+14]..[349,10818+21])
+                  Ptyp_constr "program" ([349,10818+14]..[349,10818+21])
+                  []
+              ([350,10842+4]..[350,10842+32])
+                Immutable
+                "modules" ([350,10842+4]..[350,10842+11])                core_type ([350,10842+14]..[350,10842+30])
+                  Ptyp_constr "required_modules" ([350,10842+14]..[350,10842+30])
+                  []
+              ([351,10875+4]..[351,10875+31])
+                Immutable
+                "side_effect" ([351,10875+4]..[351,10875+15])                core_type ([351,10875+18]..[351,10875+31])
+                  Ptyp_constr "option" ([351,10875+25]..[351,10875+31])
+                  [
+                    core_type ([351,10875+18]..[351,10875+24])
+                      Ptyp_constr "string" ([351,10875+18]..[351,10875+24])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+]
+excludes
+deps_program
+int_clause
+string_clause
+for_direction
+for_direction
+expression_desc
+statement_desc
+for_ident_expression
+label
+finish_ident_expression
+property_map
+length_object
+required_modules
+case_clause
+alo.txt
+[
+  structure_item ([42,1608+0]..[42,1608+38])
+    Pstr_type Rec
+    [
+      type_declaration "mutable_flag" ([42,1608+5]..[42,1608+17]) ([42,1608+0]..[42,1608+38])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([42,1608+20]..[42,1608+38])
+              Ptyp_constr "Js_op.mutable_flag" ([42,1608+20]..[42,1608+38])
+              []
+    ]
+  structure_item ([44,1648+0]..[44,1648+24])
+    Pstr_type Rec
+    [
+      type_declaration "binop" ([44,1648+5]..[44,1648+10]) ([44,1648+0]..[44,1648+24])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([44,1648+13]..[44,1648+24])
+              Ptyp_constr "Js_op.binop" ([44,1648+13]..[44,1648+24])
+              []
+    ]
+  structure_item ([46,1674+0]..[46,1674+26])
+    Pstr_type Rec
+    [
+      type_declaration "int_op" ([46,1674+5]..[46,1674+11]) ([46,1674+0]..[46,1674+26])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([46,1674+14]..[46,1674+26])
+              Ptyp_constr "Js_op.int_op" ([46,1674+14]..[46,1674+26])
+              []
+    ]
+  structure_item ([48,1702+0]..[48,1702+22])
+    Pstr_type Rec
+    [
+      type_declaration "kind" ([48,1702+5]..[48,1702+9]) ([48,1702+0]..[48,1702+22])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([48,1702+12]..[48,1702+22])
+              Ptyp_constr "Js_op.kind" ([48,1702+12]..[48,1702+22])
+              []
+    ]
+  structure_item ([50,1726+0]..[50,1726+30])
+    Pstr_type Rec
+    [
+      type_declaration "property" ([50,1726+5]..[50,1726+13]) ([50,1726+0]..[50,1726+30])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([50,1726+16]..[50,1726+30])
+              Ptyp_constr "Js_op.property" ([50,1726+16]..[50,1726+30])
+              []
+    ]
+  structure_item ([52,1758+0]..[52,1758+26])
+    Pstr_type Rec
+    [
+      type_declaration "number" ([52,1758+5]..[52,1758+11]) ([52,1758+0]..[52,1758+26])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([52,1758+14]..[52,1758+26])
+              Ptyp_constr "Js_op.number" ([52,1758+14]..[52,1758+26])
+              []
+    ]
+  structure_item ([54,1786+0]..[54,1786+34])
+    Pstr_type Rec
+    [
+      type_declaration "ident_info" ([54,1786+5]..[54,1786+15]) ([54,1786+0]..[54,1786+34])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([54,1786+18]..[54,1786+34])
+              Ptyp_constr "Js_op.ident_info" ([54,1786+18]..[54,1786+34])
+              []
+    ]
+  structure_item ([56,1822+0]..[56,1822+28])
+    Pstr_type Rec
+    [
+      type_declaration "exports" ([56,1822+5]..[56,1822+12]) ([56,1822+0]..[56,1822+28])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([56,1822+15]..[56,1822+28])
+              Ptyp_constr "Js_op.exports" ([56,1822+15]..[56,1822+28])
+              []
+    ]
+  structure_item ([58,1852+0]..[58,1852+30])
+    Pstr_type Rec
+    [
+      type_declaration "tag_info" ([58,1852+5]..[58,1852+13]) ([58,1852+0]..[58,1852+30])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([58,1852+16]..[58,1852+30])
+              Ptyp_constr "Js_op.tag_info" ([58,1852+16]..[58,1852+30])
+              []
+    ]
+  structure_item ([60,1884+0]..[60,1884+41])
+    Pstr_type Rec
+    [
+      type_declaration "property_name" ([60,1884+5]..[60,1884+18]) ([60,1884+0]..[60,1884+41])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([60,1884+22]..[60,1884+41])
+              Ptyp_constr "Js_op.property_name" ([60,1884+22]..[60,1884+41])
+              []
+    ]
+  structure_item ([62,1927+0]..[370,11291+9])
+    Pstr_type Rec
+    [
+      type_declaration "label" ([62,1927+5]..[62,1927+10]) ([62,1927+0]..[62,1927+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([62,1927+13]..[62,1927+19])
+              Ptyp_constr "string" ([62,1927+13]..[62,1927+19])
+              []
+      type_declaration "ident" ([65,1949+4]..[65,1949+9]) ([65,1949+0]..[65,1949+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([65,1949+12]..[65,1949+19])
+              Ptyp_constr "Ident.t" ([65,1949+12]..[65,1949+19])
+              []
+      type_declaration "module_id" ([73,2148+4]..[73,2148+13]) ([73,2148+0]..[75,2198+1])
+        attribute "ocaml.text"
+          [
+            structure_item ([67,2003+0]..[70,2142+3])
+              Pstr_eval
+              expression ([67,2003+0]..[70,2142+3])
+                Pexp_constant PConst_string(" object literal, if key is ident, in this case, it might be renamed by\n    Google Closure  optimizer,\n    currently we always use quote\n ",([67,2003+0]..[70,2142+3]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([74,2166+2]..[74,2166+13])
+                Immutable
+                "id" ([74,2166+2]..[74,2166+4])                core_type ([74,2166+7]..[74,2166+12])
+                  Ptyp_constr "ident" ([74,2166+7]..[74,2166+12])
+                  []
+              ([74,2166+14]..[74,2166+31])
+                Immutable
+                "kind" ([74,2166+14]..[74,2166+18])                core_type ([74,2166+21]..[74,2166+31])
+                  Ptyp_constr "Js_op.kind" ([74,2166+21]..[74,2166+31])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "required_modules" ([76,2200+4]..[76,2200+20]) ([76,2200+0]..[76,2200+37])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([76,2200+23]..[76,2200+37])
+              Ptyp_constr "list" ([76,2200+33]..[76,2200+37])
+              [
+                core_type ([76,2200+23]..[76,2200+32])
+                  Ptyp_constr "module_id" ([76,2200+23]..[76,2200+32])
+                  []
+              ]
+      type_declaration "vident" ([77,2238+4]..[77,2238+10]) ([77,2238+0]..[79,2267+42])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              ([78,2251+2]..[78,2251+15])
+                "Id" ([78,2251+4]..[78,2251+6])
+                [
+                  core_type ([78,2251+10]..[78,2251+15])
+                    Ptyp_constr "ident" ([78,2251+10]..[78,2251+15])
+                    []
+                ]
+                None
+              ([79,2267+2]..[79,2267+42])
+                "Qualified" ([79,2267+4]..[79,2267+13])
+                [
+                  core_type ([79,2267+17]..[79,2267+26])
+                    Ptyp_constr "module_id" ([79,2267+17]..[79,2267+26])
+                    []
+                  core_type ([79,2267+29]..[79,2267+42])
+                    Ptyp_constr "option" ([79,2267+36]..[79,2267+42])
+                    [
+                      core_type ([79,2267+29]..[79,2267+35])
+                        Ptyp_constr "string" ([79,2267+29]..[79,2267+35])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "exception_ident" ([96,2858+4]..[96,2858+19]) ([96,2858+0]..[96,2858+27])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([96,2858+22]..[96,2858+27])
+              Ptyp_constr "ident" ([96,2858+22]..[96,2858+27])
+              []
+      type_declaration "for_ident" ([98,2887+4]..[98,2887+13]) ([98,2887+0]..[98,2887+21])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([98,2887+16]..[98,2887+21])
+              Ptyp_constr "ident" ([98,2887+16]..[98,2887+21])
+              []
+      type_declaration "for_direction" ([100,2910+4]..[100,2910+17]) ([100,2910+0]..[100,2910+40])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([100,2910+20]..[100,2910+40])
+              Ptyp_constr "Js_op.direction_flag" ([100,2910+20]..[100,2910+40])
+              []
+      type_declaration "property_map" ([102,2952+4]..[102,2952+16]) ([102,2952+0]..[103,2971+37])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([103,2971+4]..[103,2971+37])
+              Ptyp_constr "list" ([103,2971+33]..[103,2971+37])
+              [
+                core_type ([103,2971+5]..[103,2971+31])
+                  Ptyp_tuple
+                  [
+                    core_type ([103,2971+5]..[103,2971+18])
+                      Ptyp_constr "property_name" ([103,2971+5]..[103,2971+18])
+                      []
+                    core_type ([103,2971+21]..[103,2971+31])
+                      Ptyp_constr "expression" ([103,2971+21]..[103,2971+31])
+                      []
+                  ]
+              ]
+      type_declaration "length_object" ([104,3009+4]..[104,3009+17]) ([104,3009+0]..[104,3009+39])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([104,3009+20]..[104,3009+39])
+              Ptyp_constr "Js_op.length_object" ([104,3009+20]..[104,3009+39])
+              []
+      type_declaration "expression_desc" ([105,3049+4]..[105,3049+19]) ([105,3049+0]..[204,6945+8])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              ([106,3071+2]..[106,3071+40])
+                "Length" ([106,3071+4]..[106,3071+10])
+                [
+                  core_type ([106,3071+14]..[106,3071+24])
+                    Ptyp_constr "expression" ([106,3071+14]..[106,3071+24])
+                    []
+                  core_type ([106,3071+27]..[106,3071+40])
+                    Ptyp_constr "length_object" ([106,3071+27]..[106,3071+40])
+                    []
+                ]
+                None
+              ([107,3112+2]..[107,3112+29])
+                "Char_of_int" ([107,3112+4]..[107,3112+15])
+                [
+                  core_type ([107,3112+19]..[107,3112+29])
+                    Ptyp_constr "expression" ([107,3112+19]..[107,3112+29])
+                    []
+                ]
+                None
+              ([108,3142+2]..[108,3142+29])
+                "Char_to_int" ([108,3142+4]..[108,3142+15])
+                [
+                  core_type ([108,3142+19]..[108,3142+29])
+                    Ptyp_constr "expression" ([108,3142+19]..[108,3142+29])
+                    []
+                ]
+                None
+              ([109,3172+2]..[109,3172+38])
+                "Is_null_or_undefined" ([109,3172+4]..[109,3172+24])
+                attribute "ocaml.doc"
+                  [
+                    structure_item ([110,3211+4]..[110,3211+42])
+                      Pstr_eval
+                      expression ([110,3211+4]..[110,3211+42])
+                        Pexp_constant PConst_string(" where we use a trick [== null ] ",([110,3211+4]..[110,3211+42]),None)
+                  ]
+                [
+                  core_type ([109,3172+28]..[109,3172+38])
+                    Ptyp_constr "expression" ([109,3172+28]..[109,3172+38])
+                    []
+                ]
+                None
+              ([111,3254+2]..[111,3254+44])
+                "String_append" ([111,3254+4]..[111,3254+17])
+                [
+                  core_type ([111,3254+21]..[111,3254+31])
+                    Ptyp_constr "expression" ([111,3254+21]..[111,3254+31])
+                    []
+                  core_type ([111,3254+34]..[111,3254+44])
+                    Ptyp_constr "expression" ([111,3254+34]..[111,3254+44])
+                    []
+                ]
+                None
+              ([112,3299+2]..[112,3299+16])
+                "Bool" ([112,3299+4]..[112,3299+8])
+                [
+                  core_type ([112,3299+12]..[112,3299+16])
+                    Ptyp_constr "bool" ([112,3299+12]..[112,3299+16])
+                    []
+                ]
+                None
+              ([116,3470+2]..[116,3470+24])
+                "Typeof" ([116,3470+4]..[116,3470+10])
+                [
+                  core_type ([116,3470+14]..[116,3470+24])
+                    Ptyp_constr "expression" ([116,3470+14]..[116,3470+24])
+                    []
+                ]
+                None
+              ([117,3495+2]..[117,3495+24])
+                "Js_not" ([117,3495+4]..[117,3495+10])
+                [
+                  core_type ([117,3495+14]..[117,3495+24])
+                    Ptyp_constr "expression" ([117,3495+14]..[117,3495+24])
+                    []
+                ]
+                None
+              ([119,3604+2]..[119,3604+34])
+                "Seq" ([119,3604+4]..[119,3604+7])
+                [
+                  core_type ([119,3604+11]..[119,3604+21])
+                    Ptyp_constr "expression" ([119,3604+11]..[119,3604+21])
+                    []
+                  core_type ([119,3604+24]..[119,3604+34])
+                    Ptyp_constr "expression" ([119,3604+24]..[119,3604+34])
+                    []
+                ]
+                None
+              ([120,3639+2]..[120,3639+48])
+                "Cond" ([120,3639+4]..[120,3639+8])
+                [
+                  core_type ([120,3639+12]..[120,3639+22])
+                    Ptyp_constr "expression" ([120,3639+12]..[120,3639+22])
+                    []
+                  core_type ([120,3639+25]..[120,3639+35])
+                    Ptyp_constr "expression" ([120,3639+25]..[120,3639+35])
+                    []
+                  core_type ([120,3639+38]..[120,3639+48])
+                    Ptyp_constr "expression" ([120,3639+38]..[120,3639+48])
+                    []
+                ]
+                None
+              ([121,3688+2]..[121,3688+42])
+                "Bin" ([121,3688+4]..[121,3688+7])
+                [
+                  core_type ([121,3688+11]..[121,3688+16])
+                    Ptyp_constr "binop" ([121,3688+11]..[121,3688+16])
+                    []
+                  core_type ([121,3688+19]..[121,3688+29])
+                    Ptyp_constr "expression" ([121,3688+19]..[121,3688+29])
+                    []
+                  core_type ([121,3688+32]..[121,3688+42])
+                    Ptyp_constr "expression" ([121,3688+32]..[121,3688+42])
+                    []
+                ]
+                None
+              ([126,3937+2]..[126,3937+39])
+                "FlatCall" ([126,3937+4]..[126,3937+12])
+                [
+                  core_type ([126,3937+16]..[126,3937+26])
+                    Ptyp_constr "expression" ([126,3937+16]..[126,3937+26])
+                    []
+                  core_type ([126,3937+29]..[126,3937+39])
+                    Ptyp_constr "expression" ([126,3937+29]..[126,3937+39])
+                    []
+                ]
+                None
+              ([132,4171+2]..[132,4171+57])
+                "Call" ([132,4171+4]..[132,4171+8])
+                [
+                  core_type ([132,4171+12]..[132,4171+22])
+                    Ptyp_constr "expression" ([132,4171+12]..[132,4171+22])
+                    []
+                  core_type ([132,4171+25]..[132,4171+40])
+                    Ptyp_constr "list" ([132,4171+36]..[132,4171+40])
+                    [
+                      core_type ([132,4171+25]..[132,4171+35])
+                        Ptyp_constr "expression" ([132,4171+25]..[132,4171+35])
+                        []
+                    ]
+                  core_type ([132,4171+43]..[132,4171+57])
+                    Ptyp_constr "Js_call_info.t" ([132,4171+43]..[132,4171+57])
+                    []
+                ]
+                None
+              ([137,4380+2]..[137,4380+43])
+                "String_index" ([137,4380+4]..[137,4380+16])
+                [
+                  core_type ([137,4380+20]..[137,4380+30])
+                    Ptyp_constr "expression" ([137,4380+20]..[137,4380+30])
+                    []
+                  core_type ([137,4380+33]..[137,4380+43])
+                    Ptyp_constr "expression" ([137,4380+33]..[137,4380+43])
+                    []
+                ]
+                None
+              ([139,4442+2]..[139,4442+42])
+                "Array_index" ([139,4442+4]..[139,4442+15])
+                [
+                  core_type ([139,4442+19]..[139,4442+29])
+                    Ptyp_constr "expression" ([139,4442+19]..[139,4442+29])
+                    []
+                  core_type ([139,4442+32]..[139,4442+42])
+                    Ptyp_constr "expression" ([139,4442+32]..[139,4442+42])
+                    []
+                ]
+                None
+              ([146,4695+2]..[146,4695+54])
+                "Static_index" ([146,4695+4]..[146,4695+16])
+                [
+                  core_type ([146,4695+20]..[146,4695+30])
+                    Ptyp_constr "expression" ([146,4695+20]..[146,4695+30])
+                    []
+                  core_type ([146,4695+33]..[146,4695+39])
+                    Ptyp_constr "string" ([146,4695+33]..[146,4695+39])
+                    []
+                  core_type ([146,4695+42]..[146,4695+54])
+                    Ptyp_constr "option" ([146,4695+48]..[146,4695+54])
+                    [
+                      core_type ([146,4695+42]..[146,4695+47])
+                        Ptyp_constr "int32" ([146,4695+42]..[146,4695+47])
+                        []
+                    ]
+                ]
+                None
+              ([157,5121+2]..[157,5121+46])
+                "New" ([157,5121+4]..[157,5121+7])
+                [
+                  core_type ([157,5121+11]..[157,5121+21])
+                    Ptyp_constr "expression" ([157,5121+11]..[157,5121+21])
+                    []
+                  core_type ([157,5121+24]..[157,5121+46])
+                    Ptyp_constr "option" ([157,5121+40]..[157,5121+46])
+                    [
+                      core_type ([157,5121+24]..[157,5121+39])
+                        Ptyp_constr "list" ([157,5121+35]..[157,5121+39])
+                        [
+                          core_type ([157,5121+24]..[157,5121+34])
+                            Ptyp_constr "expression" ([157,5121+24]..[157,5121+34])
+                            []
+                        ]
+                    ]
+                ]
+                None
+              ([158,5194+2]..[158,5194+17])
+                "Var" ([158,5194+4]..[158,5194+7])
+                [
+                  core_type ([158,5194+11]..[158,5194+17])
+                    Ptyp_constr "vident" ([158,5194+11]..[158,5194+17])
+                    []
+                ]
+                None
+              ([159,5212+2]..[159,5212+52])
+                "Fun" ([159,5212+4]..[159,5212+7])
+                [
+                  core_type ([159,5212+11]..[159,5212+15])
+                    Ptyp_constr "bool" ([159,5212+11]..[159,5212+15])
+                    []
+                  core_type ([159,5212+18]..[159,5212+28])
+                    Ptyp_constr "list" ([159,5212+24]..[159,5212+28])
+                    [
+                      core_type ([159,5212+18]..[159,5212+23])
+                        Ptyp_constr "ident" ([159,5212+18]..[159,5212+23])
+                        []
+                    ]
+                  core_type ([159,5212+32]..[159,5212+37])
+                    Ptyp_constr "block" ([159,5212+32]..[159,5212+37])
+                    []
+                  core_type ([159,5212+40]..[159,5212+52])
+                    Ptyp_constr "Js_fun_env.t" ([159,5212+40]..[159,5212+52])
+                    []
+                ]
+                None
+              ([163,5356+2]..[163,5356+24])
+                "Str" ([163,5356+4]..[163,5356+7])
+                [
+                  core_type ([163,5356+11]..[163,5356+15])
+                    Ptyp_constr "bool" ([163,5356+11]..[163,5356+15])
+                    []
+                  core_type ([163,5356+18]..[163,5356+24])
+                    Ptyp_constr "string" ([163,5356+18]..[163,5356+24])
+                    []
+                ]
+                None
+              ([172,5769+2]..[172,5769+21])
+                "Unicode" ([172,5769+4]..[172,5769+11])
+                [
+                  core_type ([172,5769+15]..[172,5769+21])
+                    Ptyp_constr "string" ([172,5769+15]..[172,5769+21])
+                    []
+                ]
+                None
+              ([174,5845+2]..[174,5845+32])
+                "Raw_js_code" ([174,5845+4]..[174,5845+15])
+                [
+                  core_type ([174,5845+19]..[174,5845+32])
+                    Ptyp_constr "Js_raw_info.t" ([174,5845+19]..[174,5845+32])
+                    []
+                ]
+                None
+              ([177,5910+2]..[177,5910+43])
+                "Array" ([177,5910+4]..[177,5910+9])
+                [
+                  core_type ([177,5910+13]..[177,5910+28])
+                    Ptyp_constr "list" ([177,5910+24]..[177,5910+28])
+                    [
+                      core_type ([177,5910+13]..[177,5910+23])
+                        Ptyp_constr "expression" ([177,5910+13]..[177,5910+23])
+                        []
+                    ]
+                  core_type ([177,5910+31]..[177,5910+43])
+                    Ptyp_constr "mutable_flag" ([177,5910+31]..[177,5910+43])
+                    []
+                ]
+                None
+              ([178,5954+2]..[178,5954+39])
+                "Optional_block" ([178,5954+4]..[178,5954+18])
+                [
+                  core_type ([178,5954+22]..[178,5954+32])
+                    Ptyp_constr "expression" ([178,5954+22]..[178,5954+32])
+                    []
+                  core_type ([178,5954+35]..[178,5954+39])
+                    Ptyp_constr "bool" ([178,5954+35]..[178,5954+39])
+                    []
+                ]
+                None
+              ([180,6028+2]..[180,6028+72])
+                "Caml_block" ([180,6028+4]..[180,6028+14])
+                [
+                  core_type ([180,6028+18]..[180,6028+33])
+                    Ptyp_constr "list" ([180,6028+29]..[180,6028+33])
+                    [
+                      core_type ([180,6028+18]..[180,6028+28])
+                        Ptyp_constr "expression" ([180,6028+18]..[180,6028+28])
+                        []
+                    ]
+                  core_type ([180,6028+36]..[180,6028+48])
+                    Ptyp_constr "mutable_flag" ([180,6028+36]..[180,6028+48])
+                    []
+                  core_type ([180,6028+51]..[180,6028+61])
+                    Ptyp_constr "expression" ([180,6028+51]..[180,6028+61])
+                    []
+                  core_type ([180,6028+64]..[180,6028+72])
+                    Ptyp_constr "tag_info" ([180,6028+64]..[180,6028+72])
+                    []
+                ]
+                None
+              ([194,6564+2]..[194,6564+32])
+                "Caml_block_tag" ([194,6564+4]..[194,6564+18])
+                [
+                  core_type ([194,6564+22]..[194,6564+32])
+                    Ptyp_constr "expression" ([194,6564+22]..[194,6564+32])
+                    []
+                ]
+                None
+              ([201,6883+2]..[201,6883+20])
+                "Number" ([201,6883+4]..[201,6883+10])
+                [
+                  core_type ([201,6883+14]..[201,6883+20])
+                    Ptyp_constr "number" ([201,6883+14]..[201,6883+20])
+                    []
+                ]
+                None
+              ([202,6904+2]..[202,6904+26])
+                "Object" ([202,6904+4]..[202,6904+10])
+                [
+                  core_type ([202,6904+14]..[202,6904+26])
+                    Ptyp_constr "property_map" ([202,6904+14]..[202,6904+26])
+                    []
+                ]
+                None
+              ([203,6931+2]..[203,6931+13])
+                "Undefined" ([203,6931+4]..[203,6931+13])
+                []
+                None
+              ([204,6945+2]..[204,6945+8])
+                "Null" ([204,6945+4]..[204,6945+8])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "for_ident_expression" ([205,6954+4]..[205,6954+24]) ([205,6954+0]..[205,6954+37])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([205,6954+27]..[205,6954+37])
+              Ptyp_constr "expression" ([205,6954+27]..[205,6954+37])
+              []
+      type_declaration "finish_ident_expression" ([207,7003+4]..[207,7003+27]) ([207,7003+0]..[207,7003+40])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([207,7003+30]..[207,7003+40])
+              Ptyp_constr "expression" ([207,7003+30]..[207,7003+40])
+              []
+      type_declaration "case_clause" ([276,8665+4]..[276,8665+15]) ([276,8665+0]..[280,8786+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([277,8685+2]..[277,8685+23])
+                Immutable
+                "switch_body" ([277,8685+2]..[277,8685+13])                core_type ([277,8685+16]..[277,8685+21])
+                  Ptyp_constr "block" ([277,8685+16]..[277,8685+21])
+                  []
+              ([278,8709+2]..[278,8709+24])
+                Immutable
+                "should_break" ([278,8709+2]..[278,8709+14])                core_type ([278,8709+18]..[278,8709+22])
+                  Ptyp_constr "bool" ([278,8709+18]..[278,8709+22])
+                  []
+              ([279,8758+2]..[279,8758+27])
+                Immutable
+                "comment" ([279,8758+2]..[279,8758+9])                core_type ([279,8758+12]..[279,8758+25])
+                  Ptyp_constr "option" ([279,8758+19]..[279,8758+25])
+                  [
+                    core_type ([279,8758+12]..[279,8758+18])
+                      Ptyp_constr "string" ([279,8758+12]..[279,8758+18])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "string_clause" ([282,8789+4]..[282,8789+17]) ([282,8789+0]..[282,8789+40])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([282,8789+20]..[282,8789+40])
+              Ptyp_tuple
+              [
+                core_type ([282,8789+20]..[282,8789+26])
+                  Ptyp_constr "string" ([282,8789+20]..[282,8789+26])
+                  []
+                core_type ([282,8789+29]..[282,8789+40])
+                  Ptyp_constr "case_clause" ([282,8789+29]..[282,8789+40])
+                  []
+              ]
+      type_declaration "int_clause" ([283,8830+4]..[283,8830+14]) ([283,8830+0]..[283,8830+35])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([283,8830+18]..[283,8830+35])
+              Ptyp_tuple
+              [
+                core_type ([283,8830+18]..[283,8830+21])
+                  Ptyp_constr "int" ([283,8830+18]..[283,8830+21])
+                  []
+                core_type ([283,8830+24]..[283,8830+35])
+                  Ptyp_constr "case_clause" ([283,8830+24]..[283,8830+35])
+                  []
+              ]
+      type_declaration "statement_desc" ([285,8867+4]..[285,8867+18]) ([285,8867+0]..[315,10253+12])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              ([286,8888+2]..[286,8888+18])
+                "Block" ([286,8888+4]..[286,8888+9])
+                [
+                  core_type ([286,8888+13]..[286,8888+18])
+                    Ptyp_constr "block" ([286,8888+13]..[286,8888+18])
+                    []
+                ]
+                None
+              ([287,8907+2]..[287,8907+36])
+                "Variable" ([287,8907+4]..[287,8907+12])
+                [
+                  core_type ([287,8907+16]..[287,8907+36])
+                    Ptyp_constr "variable_declaration" ([287,8907+16]..[287,8907+36])
+                    []
+                ]
+                None
+              ([289,9005+2]..[289,9005+21])
+                "Exp" ([289,9005+4]..[289,9005+7])
+                [
+                  core_type ([289,9005+11]..[289,9005+21])
+                    Ptyp_constr "expression" ([289,9005+11]..[289,9005+21])
+                    []
+                ]
+                None
+              ([290,9027+2]..[290,9027+36])
+                "If" ([290,9027+4]..[290,9027+6])
+                [
+                  core_type ([290,9027+10]..[290,9027+20])
+                    Ptyp_constr "expression" ([290,9027+10]..[290,9027+20])
+                    []
+                  core_type ([290,9027+23]..[290,9027+28])
+                    Ptyp_constr "block" ([290,9027+23]..[290,9027+28])
+                    []
+                  core_type ([290,9027+31]..[290,9027+36])
+                    Ptyp_constr "block" ([290,9027+31]..[290,9027+36])
+                    []
+                ]
+                None
+              ([291,9064+2]..[292,9112+22])
+                "While" ([291,9064+4]..[291,9064+9])
+                [
+                  core_type ([291,9064+13]..[291,9064+25])
+                    Ptyp_constr "option" ([291,9064+19]..[291,9064+25])
+                    [
+                      core_type ([291,9064+13]..[291,9064+18])
+                        Ptyp_constr "label" ([291,9064+13]..[291,9064+18])
+                        []
+                    ]
+                  core_type ([291,9064+29]..[291,9064+39])
+                    Ptyp_constr "expression" ([291,9064+29]..[291,9064+39])
+                    []
+                  core_type ([291,9064+42]..[291,9064+47])
+                    Ptyp_constr "block" ([291,9064+42]..[291,9064+47])
+                    []
+                  core_type ([292,9112+10]..[292,9112+22])
+                    Ptyp_constr "Js_closure.t" ([292,9112+10]..[292,9112+22])
+                    []
+                ]
+                None
+              ([293,9206+2]..[295,9322+22])
+                "ForRange" ([293,9206+4]..[293,9206+12])
+                [
+                  core_type ([293,9206+16]..[293,9206+43])
+                    Ptyp_constr "option" ([293,9206+37]..[293,9206+43])
+                    [
+                      core_type ([293,9206+16]..[293,9206+36])
+                        Ptyp_constr "for_ident_expression" ([293,9206+16]..[293,9206+36])
+                        []
+                    ]
+                  core_type ([293,9206+46]..[293,9206+69])
+                    Ptyp_constr "finish_ident_expression" ([293,9206+46]..[293,9206+69])
+                    []
+                  core_type ([294,9278+8]..[294,9278+17])
+                    Ptyp_constr "for_ident" ([294,9278+8]..[294,9278+17])
+                    []
+                  core_type ([294,9278+22]..[294,9278+35])
+                    Ptyp_constr "for_direction" ([294,9278+22]..[294,9278+35])
+                    []
+                  core_type ([294,9278+38]..[294,9278+43])
+                    Ptyp_constr "block" ([294,9278+38]..[294,9278+43])
+                    []
+                  core_type ([295,9322+10]..[295,9322+22])
+                    Ptyp_constr "Js_closure.t" ([295,9322+10]..[295,9322+22])
+                    []
+                ]
+                None
+              ([296,9345+2]..[296,9345+21])
+                "Continue" ([296,9345+4]..[296,9345+12])
+                [
+                  core_type ([296,9345+16]..[296,9345+21])
+                    Ptyp_constr "label" ([296,9345+16]..[296,9345+21])
+                    []
+                ]
+                None
+              ([297,9367+2]..[297,9367+9])
+                "Break" ([297,9367+4]..[297,9367+9])
+                []
+                None
+              ([298,9416+2]..[298,9416+24])
+                "Return" ([298,9416+4]..[298,9416+10])
+                [
+                  core_type ([298,9416+14]..[298,9416+24])
+                    Ptyp_constr "expression" ([298,9416+14]..[298,9416+24])
+                    []
+                ]
+                None
+              ([311,10032+2]..[311,10032+61])
+                "Int_switch" ([311,10032+4]..[311,10032+14])
+                [
+                  core_type ([311,10032+18]..[311,10032+28])
+                    Ptyp_constr "expression" ([311,10032+18]..[311,10032+28])
+                    []
+                  core_type ([311,10032+31]..[311,10032+46])
+                    Ptyp_constr "list" ([311,10032+42]..[311,10032+46])
+                    [
+                      core_type ([311,10032+31]..[311,10032+41])
+                        Ptyp_constr "int_clause" ([311,10032+31]..[311,10032+41])
+                        []
+                    ]
+                  core_type ([311,10032+49]..[311,10032+61])
+                    Ptyp_constr "option" ([311,10032+55]..[311,10032+61])
+                    [
+                      core_type ([311,10032+49]..[311,10032+54])
+                        Ptyp_constr "block" ([311,10032+49]..[311,10032+54])
+                        []
+                    ]
+                ]
+                None
+              ([312,10094+2]..[312,10094+67])
+                "String_switch" ([312,10094+4]..[312,10094+17])
+                [
+                  core_type ([312,10094+21]..[312,10094+31])
+                    Ptyp_constr "expression" ([312,10094+21]..[312,10094+31])
+                    []
+                  core_type ([312,10094+34]..[312,10094+52])
+                    Ptyp_constr "list" ([312,10094+48]..[312,10094+52])
+                    [
+                      core_type ([312,10094+34]..[312,10094+47])
+                        Ptyp_constr "string_clause" ([312,10094+34]..[312,10094+47])
+                        []
+                    ]
+                  core_type ([312,10094+55]..[312,10094+67])
+                    Ptyp_constr "option" ([312,10094+61]..[312,10094+67])
+                    [
+                      core_type ([312,10094+55]..[312,10094+60])
+                        Ptyp_constr "block" ([312,10094+55]..[312,10094+60])
+                        []
+                    ]
+                ]
+                None
+              ([313,10162+2]..[313,10162+23])
+                "Throw" ([313,10162+4]..[313,10162+9])
+                [
+                  core_type ([313,10162+13]..[313,10162+23])
+                    Ptyp_constr "expression" ([313,10162+13]..[313,10162+23])
+                    []
+                ]
+                None
+              ([314,10186+2]..[314,10186+66])
+                "Try" ([314,10186+4]..[314,10186+7])
+                [
+                  core_type ([314,10186+11]..[314,10186+16])
+                    Ptyp_constr "block" ([314,10186+11]..[314,10186+16])
+                    []
+                  core_type ([314,10186+19]..[314,10186+51])
+                    Ptyp_constr "option" ([314,10186+45]..[314,10186+51])
+                    [
+                      core_type ([314,10186+20]..[314,10186+43])
+                        Ptyp_tuple
+                        [
+                          core_type ([314,10186+20]..[314,10186+35])
+                            Ptyp_constr "exception_ident" ([314,10186+20]..[314,10186+35])
+                            []
+                          core_type ([314,10186+38]..[314,10186+43])
+                            Ptyp_constr "block" ([314,10186+38]..[314,10186+43])
+                            []
+                        ]
+                    ]
+                  core_type ([314,10186+54]..[314,10186+66])
+                    Ptyp_constr "option" ([314,10186+60]..[314,10186+66])
+                    [
+                      core_type ([314,10186+54]..[314,10186+59])
+                        Ptyp_constr "block" ([314,10186+54]..[314,10186+59])
+                        []
+                    ]
+                ]
+                None
+              ([315,10253+2]..[315,10253+12])
+                "Debugger" ([315,10253+4]..[315,10253+12])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "expression" ([319,10269+4]..[319,10269+14]) ([319,10269+0]..[322,10352+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([320,10288+2]..[320,10288+36])
+                Immutable
+                "expression_desc" ([320,10288+2]..[320,10288+17])                core_type ([320,10288+20]..[320,10288+35])
+                  Ptyp_constr "expression_desc" ([320,10288+20]..[320,10288+35])
+                  []
+              ([321,10325+2]..[321,10325+26])
+                Immutable
+                "comment" ([321,10325+2]..[321,10325+9])                core_type ([321,10325+12]..[321,10325+25])
+                  Ptyp_constr "option" ([321,10325+19]..[321,10325+25])
+                  [
+                    core_type ([321,10325+12]..[321,10325+18])
+                      Ptyp_constr "string" ([321,10325+12]..[321,10325+18])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "statement" ([324,10355+4]..[324,10355+13]) ([324,10355+0]..[327,10436+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([325,10373+2]..[325,10373+35])
+                Immutable
+                "statement_desc" ([325,10373+2]..[325,10373+16])                core_type ([325,10373+20]..[325,10373+34])
+                  Ptyp_constr "statement_desc" ([325,10373+20]..[325,10373+34])
+                  []
+              ([326,10409+2]..[326,10409+26])
+                Immutable
+                "comment" ([326,10409+2]..[326,10409+9])                core_type ([326,10409+12]..[326,10409+25])
+                  Ptyp_constr "option" ([326,10409+19]..[326,10409+25])
+                  [
+                    core_type ([326,10409+12]..[326,10409+18])
+                      Ptyp_constr "string" ([326,10409+12]..[326,10409+18])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "variable_declaration" ([329,10439+4]..[329,10439+24]) ([329,10439+0]..[334,10566+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([330,10468+2]..[330,10468+17])
+                Immutable
+                "ident" ([330,10468+2]..[330,10468+7])                core_type ([330,10468+10]..[330,10468+15])
+                  Ptyp_constr "ident" ([330,10468+10]..[330,10468+15])
+                  []
+              ([331,10486+2]..[331,10486+29])
+                Immutable
+                "value" ([331,10486+2]..[331,10486+7])                core_type ([331,10486+10]..[331,10486+28])
+                  Ptyp_constr "option" ([331,10486+22]..[331,10486+28])
+                  [
+                    core_type ([331,10486+10]..[331,10486+20])
+                      Ptyp_constr "expression" ([331,10486+10]..[331,10486+20])
+                      []
+                  ]
+              ([332,10516+2]..[332,10516+22])
+                Immutable
+                "property" ([332,10516+2]..[332,10516+10])                core_type ([332,10516+13]..[332,10516+21])
+                  Ptyp_constr "property" ([332,10516+13]..[332,10516+21])
+                  []
+              ([333,10539+2]..[333,10539+26])
+                Immutable
+                "ident_info" ([333,10539+2]..[333,10539+12])                core_type ([333,10539+15]..[333,10539+25])
+                  Ptyp_constr "ident_info" ([333,10539+15]..[333,10539+25])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "block" ([339,10678+4]..[339,10678+9]) ([339,10678+0]..[339,10678+27])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type ([339,10678+13]..[339,10678+27])
+              Ptyp_constr "list" ([339,10678+23]..[339,10678+27])
+              [
+                core_type ([339,10678+13]..[339,10678+22])
+                  Ptyp_constr "statement" ([339,10678+13]..[339,10678+22])
+                  []
+              ]
+      type_declaration "program" ([341,10707+4]..[341,10707+11]) ([341,10707+0]..[346,10793+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([342,10723+2]..[342,10723+17])
+                Immutable
+                "block" ([342,10723+2]..[342,10723+7])                core_type ([342,10723+10]..[342,10723+15])
+                  Ptyp_constr "block" ([342,10723+10]..[342,10723+15])
+                  []
+              ([343,10741+2]..[343,10741+21])
+                Immutable
+                "exports" ([343,10741+2]..[343,10741+9])                core_type ([343,10741+12]..[343,10741+19])
+                  Ptyp_constr "exports" ([343,10741+12]..[343,10741+19])
+                  []
+              ([344,10763+2]..[344,10763+28])
+                Immutable
+                "export_set" ([344,10763+2]..[344,10763+12])                core_type ([344,10763+15]..[344,10763+26])
+                  Ptyp_constr "Set_ident.t" ([344,10763+15]..[344,10763+26])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "deps_program" ([347,10795+4]..[347,10795+16]) ([347,10795+0]..[370,11291+9])
+        attribute "deriving"
+          [
+            structure_item ([353,10940+12]..[370,11291+8])
+              Pstr_eval
+              expression ([353,10940+12]..[370,11291+8])
+                Pexp_record
+                [
+                  "excludes" ([353,10940+13]..[353,10940+21])
+                    expression ([353,10940+25]..[370,11291+6])
+                      Pexp_array
+                      [
+                        expression ([354,10968+4]..[354,10968+16])
+                          Pexp_ident "deps_program" ([354,10968+4]..[354,10968+16])
+                        expression ([355,10987+4]..[355,10987+14])
+                          Pexp_ident "int_clause" ([355,10987+4]..[355,10987+14])
+                        expression ([356,11003+4]..[356,11003+17])
+                          Pexp_ident "string_clause" ([356,11003+4]..[356,11003+17])
+                        expression ([357,11023+4]..[357,11023+17])
+                          Pexp_ident "for_direction" ([357,11023+4]..[357,11023+17])
+                        expression ([359,11069+4]..[359,11069+17])
+                          Pexp_ident "for_direction" ([359,11069+4]..[359,11069+17])
+                        expression ([360,11088+4]..[360,11088+19])
+                          Pexp_ident "expression_desc" ([360,11088+4]..[360,11088+19])
+                        expression ([361,11109+4]..[361,11109+18])
+                          Pexp_ident "statement_desc" ([361,11109+4]..[361,11109+18])
+                        expression ([362,11129+4]..[362,11129+24])
+                          Pexp_ident "for_ident_expression" ([362,11129+4]..[362,11129+24])
+                        expression ([363,11155+4]..[363,11155+9])
+                          Pexp_ident "label" ([363,11155+4]..[363,11155+9])
+                        expression ([364,11166+4]..[364,11166+27])
+                          Pexp_ident "finish_ident_expression" ([364,11166+4]..[364,11166+27])
+                        expression ([365,11195+4]..[365,11195+16])
+                          Pexp_ident "property_map" ([365,11195+4]..[365,11195+16])
+                        expression ([366,11213+4]..[366,11213+17])
+                          Pexp_ident "length_object" ([366,11213+4]..[366,11213+17])
+                        expression ([368,11253+4]..[368,11253+20])
+                          Pexp_ident "required_modules" ([368,11253+4]..[368,11253+20])
+                        expression ([369,11275+4]..[369,11275+15])
+                          Pexp_ident "case_clause" ([369,11275+4]..[369,11275+15])
+                      ]
+                ]
+                None
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              ([349,10818+4]..[349,10818+23])
+                Immutable
+                "program" ([349,10818+4]..[349,10818+11])                core_type ([349,10818+14]..[349,10818+21])
+                  Ptyp_constr "program" ([349,10818+14]..[349,10818+21])
+                  []
+              ([350,10842+4]..[350,10842+32])
+                Immutable
+                "modules" ([350,10842+4]..[350,10842+11])                core_type ([350,10842+14]..[350,10842+30])
+                  Ptyp_constr "required_modules" ([350,10842+14]..[350,10842+30])
+                  []
+              ([351,10875+4]..[351,10875+31])
+                Immutable
+                "side_effect" ([351,10875+4]..[351,10875+15])                core_type ([351,10875+18]..[351,10875+31])
+                  Ptyp_constr "option" ([351,10875+25]..[351,10875+31])
+                  [
+                    core_type ([351,10875+18]..[351,10875+24])
+                      Ptyp_constr "string" ([351,10875+18]..[351,10875+24])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+]
+excludes
+deps_program
+int_clause
+string_clause
+for_direction
+for_direction
+expression_desc
+statement_desc
+for_ident_expression
+label
+finish_ident_expression
+property_map
+length_object
+required_modules
+case_clause
+alo.txt

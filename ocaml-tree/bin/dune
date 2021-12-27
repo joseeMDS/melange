@@ -1,0 +1,4 @@
+(executable
+  (name ocaml_tree)
+  (libraries melange_ocaml_tree compiler-libs.common)
+)
