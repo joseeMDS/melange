@@ -1,0 +1,6 @@
+(executable
+ (name mtree)
+ (modules mtree record_intf record_fold common)
+ (libraries ppxlib)
+ (preprocess (pps ppxlib.metaquot))
+ )
