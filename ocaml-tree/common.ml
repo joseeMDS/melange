@@ -11,9 +11,26 @@ type 'a reducer = {
   eta: 'a;
   beta: string -> 'a
 }
-let ident_of_string s = Builder.pexp_ident ~loc {txt=Lident s; loc}
 
-let construct_from_string ?(pattern=None) s = Builder.ppat_construct ~loc {txt=Lident s; loc} pattern
+
+type support =
+  | Supported of string
+  | Excluded of string
+  | Unsupported of string
+
+let string_of_support = function
+  | Supported(s)
+  | Excluded(s)
+  | Unsupported(s) -> s
+
+type node = Parsetree.type_declaration * support
+
+let with_loc v = {txt=v; loc}
+let txt v = {txt=Lident v; loc}
+
+let ident_of_string s = Builder.pexp_ident ~loc (txt s)
+
+let construct_from_string ?(pattern=None) s = Builder.ppat_construct ~loc (txt s) pattern
 
 let skip_obj = {
   eta = [%expr "unknown"];
@@ -37,5 +54,41 @@ let excludes ast =
   
   SSet.of_list excludes_values
 
-let is_supported typ ast =
-    SSet.mem typ (excludes ast)
+let all_types (ast : structure) =
+  let acc = [] in
+  let extract_type_name acc stri = match stri.pstr_desc with
+      | Pstr_type(_, [type_declaration]) -> (type_declaration, Unsupported(type_declaration.ptype_name.txt)) :: acc
+      | Pstr_type(_, type_declarations) -> 
+        let types_names = List.map (fun typ ->
+          let name = typ.ptype_name.txt in
+          if SSet.mem name (excludes ast) then
+            (typ, Excluded(name))
+          else
+            (typ,Supported(name))
+        ) type_declarations in
+        List.append types_names acc
+      | _ -> failwith("expected only type declarations at j.ml") in
+  List.fold_left extract_type_name acc ast
+
+
+let find_type_support type_name types =
+  List.find (fun (_, support) -> (string_of_support support) == type_name ) types
+  |> snd
+
+let core_type_support (core_type : core_type) ast = match core_type.ptyp_desc with
+  | Ptyp_constr(({txt=Ldot(_); _}, _)) -> Unsupported("")
+  | Ptyp_constr(({txt=Lident(name); _}, [])) -> find_type_support name ast
+  | _ -> assert false
+
+let node_of_core_type (type_) types =
+  let type_name = type_.ptype_name.txt in
+  List.find (fun (t, _) ->  t.ptype_name.txt == type_name) types
+
+let is_supported type_name ast =
+  not @@ SSet.mem type_name (excludes ast)
+
+let supported_types all_types =
+  List.filter_map (fun typ -> match snd typ with
+    | Supported(name) -> Some(name)
+    | _ -> None
+  ) all_types

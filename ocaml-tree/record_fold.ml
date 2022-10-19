@@ -23,58 +23,112 @@ include Record_intf.Make(struct
       build_case (construct_from_string txt ~pattern:args) [%expr st]
     | _ -> assert false
   
-  let mk_structural_ty ast = function
+  let rec mk_structural_ty _all_types (core_type, supported)  = match core_type.ptyp_desc with
     (* If the type is like M.t, its not supported *)
-    | Pstr_type((_, [{ptype_kind=Ptype_abstract; ptype_manifest=Some({ptyp_desc=Ptyp_constr(({txt=Ldot(_); _}, _)); _}); _}])) -> skip_obj
-    | Pstr_type((_, [{ptype_kind=Ptype_abstract; ptype_manifest=Some({ptyp_desc=Ptyp_constr(({txt=Lident(txt); _}, [])); _}); _}])) -> 
-      let code = if is_supported txt ast then
-        [%expr _self [%e ident_of_string txt]] else
-          ident_of_string txt in
-          {
-            eta=[%expr (fun _self arg -> [%e code]  _self arg)];
-            beta=(fun x -> [%expr fun _self [%e code] -> [%e ident_of_string x] _self])
-          };
-    | Pstr_type((_, [{ptype_kind=Ptype_record(_); _}])) -> skip_obj
-    | Pstr_type((_, [{ptype_kind=Ptype_variant(_); _}])) -> skip_obj
-    | _ -> assert false
+    | Ptyp_constr(({txt=Ldot(_); _}, _)) -> skip_obj
+    | Ptyp_constr(({txt=Lident(_); _}, [])) ->
+        (match supported with
+        | Unsupported(_) -> skip_obj
+        | Supported(name) -> {
+          (* TODO self.ident_name *)
+          eta = [%expr (fun _self arg -> _self [%e ident_of_string name])];
+          beta = (fun x -> [%expr fun _self [%e ident_of_string x] -> [%e ident_of_string x] _self])
+        }
+        | Excluded(name) -> {
+          eta = [%expr (fun _self arg -> [%e ident_of_string name])];
+          beta =(fun x -> [%expr fun _self [%e ident_of_string x] -> [%e ident_of_string x] _self])
+        })
+    |Ptyp_constr(({txt=Lident(type_name); _}, [_type_parameter])) when type_name = "option" || type_name = "list" ->
+      (
+        let inner = skip_obj in
+        if inner == skip_obj then
+          skip_obj
+        else
+        {
+          eta = [%expr (fun _self arg -> _self [%e ident_of_string type_name])];
+          beta = (fun x -> [%expr fun _self [%e ident_of_string x] -> [%e ident_of_string x] _self])
+        }
+      )
+    |Ptyp_tuple(types) -> 
+      let len = List.length types in
+      let _args = List.init len (fun n -> Format.sprintf("_x%i") n) in
+      let body = List.filter_map (fun core_type -> Some core_type) types in
+      let _ = body in
 
-    let get_manifest = function
-      | Ptyp_constr((_, []))
-      | Ptyp_tuple(_) -> assert false
-      | _ -> assert false
+      {
+        eta = [%expr 1+1];
+        beta = (fun _ -> [%expr assert false])
+      }
+    | _ -> (
+      assert false
+    )
 
-  let mk_body_apply ast arg v = match mk_structural_ty v ast with
-  | v when v = skip_obj -> None
+  and mk_body_apply all_types node arg  = match mk_structural_ty all_types node  with
+  | v when v == skip_obj -> None
   | v -> Some(v.beta arg)
   
-  let _mk_body' ast = function
-    | Pstr_type((_, 
-    [{ptype_kind=Ptype_record(l); _}])) as ty ->
+  let mk_body (type_, support) = 
+    match type_ with
+    | {ptype_kind=Ptype_record(l); _} ->
       let labels = List.map (fun l -> l.pld_name) l in 
-      let args = List.mapi (fun i v -> ident_of_string (Format.sprintf "_%s%i" v.txt i) ) labels in
+      let args = List.mapi (fun i _ -> Builder.ppat_var ~loc (with_loc (Format.sprintf "_x%i" i)) ) labels in
       let keys = List.map (fun v -> {txt= Lident v.txt; loc=v.loc}) labels in
       let values = List.combine keys args in
       (* not sure why this is unused *)
-      let [@warning "-26"] record = Builder.pexp_record ~loc values None in
-      let body = List.map (fun v -> mk_body_apply ty v.txt ast) labels
-      |> List.filter ((!=) Option.none) |> List.map (Option.get) |> List.hd in
-      [%expr fun _self _st [%e record] -> [%e body] st]
+      let record = Builder.ppat_record ~loc values Closed in
+      let body = 
+        List.filter_map (fun label -> mk_body_apply all_types (label.pld_type, support) label.pld_name.txt) l
+        |> List.hd in
 
-    | Pstr_type((_, [{ptype_kind=Ptype_variant(constructor_list); _}])) ->
+      [%expr fun _self _st [%p record] -> [%e body] st]
+
+    | {ptype_kind=Ptype_variant(constructor_list); _} ->
       let _ = constructor_list in
       [%expr fun _self st -> assert false]
-    | Pstr_type((_, [t])) -> (match t.ptype_manifest with
-      | Some(x) -> get_manifest x.ptyp_desc
+    | t -> (match t.ptype_manifest with
+      | Some({ptyp_desc; _} as core_type) -> (match ptyp_desc with
+        | Ptyp_tuple(_)
+        | Ptyp_constr(_, _) ->
+          let reducer = (mk_structural_ty  all_types (core_type, support)) in
+          reducer.eta
+        | _ -> failwith "Unsupported type")
       | None -> failwith "j.ml should not contain an opaque type")
-    | _ -> assert false
-  
 
-  let mk_body = [%expr 1]
+  let mk_method node =
+    let name = string_of_support @@ snd node in
+    let ppat_var s = Builder.ppat_var ~loc (with_loc s) in
+    let ptyp_constr s = Builder.ptyp_constr ~loc (txt s) [] in
+    let binding_pattern = [%pat? [%p ppat_var name]] in
+    let type_ = [%type: ('a, [%t ptyp_constr name]) fn] in
+    let binding_type = Builder.ptyp_poly ~loc [with_loc("a")] type_ in
+    [%stri let [%p binding_pattern] : [%t binding_type] = [%e mk_body node]]
 
-  let _mk_method = [%stri let x : 'a. ('a, x) fn = [%e mk_body]]
-
-  let inner_make (_ast : Parsetree.structure) = 
+  let inner_make (ast : Parsetree.structure) = 
     let module SSet = Set.Make(String) in
+
+      let all_types = (all_types ast) in
+      let supported_types = supported_types all_types in
+
+      let build_iter =
+        let type_constr type_name = Builder.ptyp_constr ~loc (txt type_name) [] in
+        let map_type type_name = Builder.label_declaration ~loc ~name:(with_loc type_name) ~mutable_:Immutable ~type_:[%type: ('state, [%t type_constr type_name]) fn] in 
+        let label_declarations = List.map map_type supported_types in
+        let type_decl = Builder.type_declaration ~loc ~name:(with_loc("iter")) ~params:[([%type: 'state], (NoVariance, NoInjectivity))] ~cstrs:[] ~kind:(Ptype_record(label_declarations)) ~private_:Public ~manifest:None in
+        let type_decl_2 = Builder.type_declaration ~loc ~name:(with_loc("fn")) ~params:[([%type: 'state], (NoVariance, NoInjectivity)); ([%type: 'a], (NoVariance, NoInjectivity))] ~cstrs:[] ~kind:Ptype_abstract ~private_:Public ~manifest:(Some([%type: 'state iter -> 'state ->  'a -> 'state])) in
+        Builder.pstr_type ~loc Recursive [type_decl; type_decl_2]
+        in 
+        let build_super = 
+           let types_name = List.map (fun type_name ->
+              txt type_name, ident_of_string type_name
+            ) supported_types in
+           let values = Builder.pexp_record ~loc types_name None in
+
+          let rhs = Builder.pexp_constraint ~loc values  [%type: 'state iter] in
+          [%stri let super : 'state iter = [%e rhs]] in
+
+          let body = List.map mk_method all_types
+            in
+
     
     [%str
     open J
@@ -89,13 +143,11 @@ include Record_intf.Make(struct
       | x::xs ->
         let st = sub self st x in
         list sub self st xs
+      
+      [%%i build_iter]
 
-      type 'state iter = ()
-
-      and ('state, 'a) fn = 'state iter -> 'state ->  'a -> 'state
-
-      let super : 'state iter = ()
-  ]
+      [%%i build_super]
+  ] @ body 
 
   let make ast = Pprintast.string_of_structure (inner_make ast)
 end)
