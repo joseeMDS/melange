@@ -33,8 +33,8 @@ let ident_of_string s = Builder.pexp_ident ~loc (txt s)
 let construct_from_string ?(pattern=None) s = Builder.ppat_construct ~loc (txt s) pattern
 
 let skip_obj = {
-  eta = [%expr "unknown"];
-  beta = fun x -> [%expr "unknown" [%e ident_of_string x]]
+  eta = [%expr unknown];
+  beta = fun x -> [%expr unknown [%e ident_of_string x]]
 }
 
 let excludes ast = 
