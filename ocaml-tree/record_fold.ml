@@ -29,35 +29,48 @@ include Record_intf.Make(struct
     | Ptyp_constr(({txt=Lident(_); _}, [])) ->
         (match supported with
         | Unsupported(_) -> skip_obj
-        | Supported(name) -> {
-          (* TODO self.ident_name *)
-          eta = [%expr (fun _self arg -> _self [%e ident_of_string name])];
-          beta = (fun x -> [%expr fun _self [%e ident_of_string x] -> [%e ident_of_string x] _self])
-        }
+        | Supported(name) -> 
+          let pexp_fields = Builder.pexp_field ~loc (ident_of_string "_self") (txt name) in
+          ({
+          eta = [%expr (fun _self arg -> [%e pexp_fields] _self arg)];
+          (* TODO beta *)
+          beta = (fun x -> [%expr fun _self [%e ident_of_string x] -> [%e ident_of_string x] _self]);
+          method_ = Some(pexp_fields)
+          }
+          )
         | Excluded(name) -> {
-          eta = [%expr (fun _self arg -> [%e ident_of_string name])];
-          beta =(fun x -> [%expr fun _self [%e ident_of_string x] -> [%e ident_of_string x] _self])
+          eta = [%expr (fun _self arg -> [%e ident_of_string name] _self arg)];
+          (* TODO beta *)
+          beta =(fun x -> [%expr fun _self [%e ident_of_string x] -> [%e ident_of_string x] _self]);
+          method_= Some((ident_of_string name))
         })
-    |Ptyp_constr(({txt=Lident(type_name); _}, [_type_parameter])) when type_name = "option" || type_name = "list" ->
+    |Ptyp_constr(({txt=Lident(type_name); _}, [type_parameter])) when type_name = "option" || type_name = "list" ->
       (
-        let inner = skip_obj in
+        let inner = mk_structural_ty all_types (type_parameter, supported) in
+        let inner_code = match inner.method_ with
+        | Some(expr) -> expr
+        | None -> inner.eta in 
         if inner == skip_obj then
           skip_obj
         else
         {
-          eta = [%expr (fun _self arg -> _self [%e ident_of_string type_name])];
-          beta = (fun x -> [%expr fun _self [%e ident_of_string x] -> [%e ident_of_string x] _self])
+          eta = [%expr (fun _self st arg -> [%e ident_of_string type_name] [%e inner_code] _self st arg)];
+          (* TODO fix beta *)
+          beta = (fun x -> [%expr [%e ident_of_string type_name] [%e inner_code] _self st [%e ident_of_string x]]);
+          method_ = None;
         }
       )
     |Ptyp_tuple(types) -> 
       let len = List.length types in
-      let _args = List.init len (fun n -> Format.sprintf("_x%i") n) in
+      let args = List.init len (fun n -> Builder.ppat_var ~loc @@ with_loc @@ Format.sprintf("_x%i") n) in
+      let tuple_pattern = Builder.ppat_tuple ~loc args in
       let body = List.filter_map (fun core_type -> Some core_type) types in
       let _ = body in
-
       {
-        eta = [%expr 1+1];
-        beta = (fun _ -> [%expr assert false])
+        eta = [%expr fun self st [%p tuple_pattern] -> 1+1];
+        (* Code not called *)
+        beta = (fun _ -> [%expr assert false]);
+        method_= None;
       }
     | _ -> (
       assert false
@@ -89,7 +102,7 @@ include Record_intf.Make(struct
       | Some({ptyp_desc; _} as core_type) -> (match ptyp_desc with
         | Ptyp_tuple(_)
         | Ptyp_constr(_, _) ->
-          let reducer = (mk_structural_ty  all_types (core_type, support)) in
+          let reducer = (mk_structural_ty all_types (core_type, support)) in
           reducer.eta
         | _ -> failwith "Unsupported type")
       | None -> failwith "j.ml should not contain an opaque type")

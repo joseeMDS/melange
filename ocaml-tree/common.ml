@@ -9,7 +9,8 @@ module SSet = Set.Make(String)
 
 type 'a reducer = {
   eta: 'a;
-  beta: string -> 'a
+  beta: string -> 'a;
+  method_: 'a option
 }
 
 
@@ -34,7 +35,8 @@ let construct_from_string ?(pattern=None) s = Builder.ppat_construct ~loc (txt s
 
 let skip_obj = {
   eta = [%expr unknown];
-  beta = fun x -> [%expr unknown [%e ident_of_string x]]
+  method_ = None;
+  beta = fun x -> [%expr unknown [%e ident_of_string x]];
 }
 
 let excludes ast = 
