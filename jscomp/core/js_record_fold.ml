@@ -95,7 +95,7 @@ let  expression_desc : 'a . ('a,expression_desc) fn  =  fun _self st -> function
 |Null -> st   
 let  for_ident_expression : 'a . ('a,for_ident_expression) fn  =  (fun _self arg -> _self.expression _self arg)   
 let  finish_ident_expression : 'a . ('a,finish_ident_expression) fn  =  (fun _self arg -> _self.expression _self arg)   
-let  case_clause : 'a . ('a,case_clause) fn  =  fun _self st { switch_body = _x0;should_break = _x1;comment = _x2} -> let st = _self.block _self st _x0 in st   
+let  case_clause : 'a . ('a,case_clause) fn  =  fun _self st { switch_body = _x0;should_break = _x1;comment = _x2} -> let st = _self.block _self st _x0 in st 
 let  string_clause : 'a . ('a,string_clause) fn  =  (fun _self st (_x0,_x1) ->  let st = case_clause _self st _x1 in st )   
 let  int_clause : 'a . ('a,int_clause) fn  =  (fun _self st (_x0,_x1) ->  let st = case_clause _self st _x1 in st )   
 let  statement_desc : 'a . ('a,statement_desc) fn  =  fun _self st -> function 

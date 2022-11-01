@@ -59,28 +59,39 @@ let excludes ast =
 let all_types (ast : structure) =
   let acc = [] in
   let extract_type_name acc stri = match stri.pstr_desc with
-      | Pstr_type(_, [type_declaration]) -> (type_declaration, Unsupported(type_declaration.ptype_name.txt)) :: acc
-      | Pstr_type(_, type_declarations) -> 
+      | Pstr_type(_, [type_declaration]) -> Format.eprintf "unsupported being added: %s\n" type_declaration.ptype_name.txt ;(type_declaration, Unsupported(type_declaration.ptype_name.txt)) :: acc
+      | Pstr_type(_, type_declarations) ->
         let types_names = List.map (fun typ ->
           let name = typ.ptype_name.txt in
+          Format.eprintf "name being added: %s\n" name;
           if SSet.mem name (excludes ast) then
             (typ, Excluded(name))
           else
             (typ,Supported(name))
         ) type_declarations in
-        List.append types_names acc
+         types_names @ acc 
       | _ -> failwith("expected only type declarations at j.ml") in
   List.fold_left extract_type_name acc ast
 
+let core_type_name core_type = match core_type.ptyp_desc with
+  | Ptyp_constr(({txt=Lident(name); _}, _))
+  | Ptyp_constr(({txt=Ldot((Lident(name)), _); _}, _)) -> name
+  | _ -> assert false
 
+let find_core_type_support type_ types =
+  let name = core_type_name type_ in
+  match List.find_opt (fun (_, support) -> (String.compare (string_of_support support) (core_type_name type_)) == 0 ) types with
+  | None -> Unsupported(name)
+  | Some(x) -> x |> snd
 let find_type_support type_name types =
   List.find (fun (_, support) -> (string_of_support support) == type_name ) types
   |> snd
 
 let core_type_support (core_type : core_type) ast = match core_type.ptyp_desc with
-  | Ptyp_constr(({txt=Ldot(_); _}, _)) -> Unsupported("")
+  | Ptyp_constr(({txt=Ldot(Lident(name), _); _}, _)) -> Unsupported(name)
   | Ptyp_constr(({txt=Lident(name); _}, [])) -> find_type_support name ast
   | _ -> assert false
+
 
 let node_of_core_type (type_) types =
   let type_name = type_.ptype_name.txt in
