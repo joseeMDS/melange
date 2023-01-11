@@ -39,7 +39,7 @@ let skip_obj = {
   beta = fun x -> [%expr unknown [%e ident_of_string x]];
 }
 
-let excludes ast = 
+let excludes ast =
   let last list = list |> List.rev |> List.hd in
   let exclude_type_decl = (match (last ast) with
   | {pstr_desc=Pstr_type((_, type_declarations)); _} -> last type_declarations
@@ -53,7 +53,7 @@ let excludes ast =
   | {pexp_desc=Pexp_ident({txt=Lident(name) ;_}); _} -> name
   | _ -> assert false
   )  excludes_array in
-  
+
   SSet.of_list excludes_values
 
 let all_types (ast : structure) =
@@ -69,7 +69,7 @@ let all_types (ast : structure) =
           else
             (typ,Supported(name))
         ) type_declarations in
-         types_names @ acc 
+         types_names @ acc
       | _ -> failwith("expected only type declarations at j.ml") in
   List.fold_left extract_type_name acc ast
 
@@ -105,3 +105,15 @@ let supported_types all_types =
     | Supported(name) -> Some(name)
     | _ -> None
   ) all_types
+
+let support_of_string all_types label =
+  let supported = List.find_opt (fun node -> match snd node with
+  | Supported(name)
+  | Unsupported(name)
+  | Excluded(name) -> name == label) (all_types) in
+  match supported with
+  | None -> Unsupported("")
+  | Some(support) ->  snd support
+
+
+
